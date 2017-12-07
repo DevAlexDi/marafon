@@ -1,0 +1,78 @@
+@media (max-width: 1199px) {
+    .modal-order .modal-dialog .order-body .one-order p{
+        font-size: 16px;
+    }
+    .modal-order .modal-dialog .order-head-modal .lvl-2 .sale-butt{
+        font-size: 17px;
+    }
+    .modal-order .modal-dialog .order-head-modal .lvl-1 .who-is p{
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 991px) {
+ 
+    .modal-order .modal-dialog .order-body .one-order p{
+        font-size: 13px;
+    }
+    .modal-order .modal-dialog .order-footer p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-order .modal-dialog .order-head-modal .lvl-1{
+        flex-direction: column;
+        .who-is{
+            margin-left: auto;
+            padding-top: 15px;
+        }
+    }
+    .modal-order .modal-dialog .order-head-modal{
+        padding: 0 10px;
+        
+    }
+    
+    .modal-order .modal-dialog .order-head-modal .lvl-1 .who-is p{
+        font-size: 12px;
+    }
+    .modal-order .modal-dialog .order-head-modal .lvl-2 .sale-butt{
+        font-size: 10px;
+    }
+    .modal-order .modal-dialog .order-body-wr{
+        padding: 0 10px;
+    }
+    .modal-order .modal-dialog .order-body .one-order .for-flex-align{
+        display: block;
+    }
+    .modal-order .modal-dialog .order-head-modal .lvl-2{
+        padding-bottom: 15px;
+    }
+    .modal-order .modal-dialog .order-body .one-order p{
+        text-align: left;
+        &.for-xs-sale-style{
+            text-align: right;
+        }
+        
+    }
+    .modal-order .modal-dialog .order-body .one-order p.bold-t{
+        margin-bottom: 15px;
+    }
+    .modal-order p, .modal-order span{
+        letter-spacing: 1px;
+    }
+    .modal-order .modal-dialog .order-body .one-order p{
+        font-size: 12px;
+    }
+    .modal-order .modal-dialog .order-footer{
+        padding: 10px;
+        display: block;
+    }
+    .modal-order .modal-dialog .order-footer p{
+        font-size: 15px;
+    }
+}
+
+
+
