@@ -685,7 +685,7 @@ $rose_color: #d53257;
   @include maxw(1200px) {
     background-size: cover;
     background-position: left top;
-    padding-bottom: 80px;
+    padding-bottom: 260px;
     padding-top: 150px;
     .macbook {
       float: none;
@@ -718,6 +718,9 @@ $rose_color: #d53257;
       line-height: 80px;
     }
   }
+  @include maxw(500px) {
+    padding-bottom: 305px;
+  }
 }
 
 .header_footer {
@@ -728,6 +731,10 @@ $rose_color: #d53257;
   position: relative;
   padding-top: 225px;
   padding-bottom: 85px;
+
+  @include maxw(500px) {
+    padding-top: 285px;
+  }
 
   .text-center {
     text-align: center;
@@ -742,6 +749,10 @@ $rose_color: #d53257;
   h2 {
     color: white;
     font-size: 60px;
+
+    @include maxw(860px) {
+    	line-height: 85px;
+    }
   }
 
   .hf-title-regular {
@@ -757,6 +768,7 @@ $rose_color: #d53257;
   .hf-title-2 {
     color: white;
     font-size: 20px;
+    font-style: normal;
     white-space: pre-line;
     line-height: 35px;
     margin-top: 20px;
@@ -765,12 +777,23 @@ $rose_color: #d53257;
     strong {
       font-size: 25px;
     }
+
+    @include maxw(860px) {
+    	margin: 20px 30px 75px;
+    }
+    @include maxw(767px) {
+    	margin-bottom: 20px;
+    }
   }
 
   ul {
     margin-left: 60px;
     margin-top: 25px;
     margin-bottom: 50px;
+
+    @include maxw(860px) {
+    	margin-left: 20px;
+    }
 
     li {
       color: #b9babb;
@@ -787,6 +810,15 @@ $rose_color: #d53257;
     margin-top: 40px;
     white-space: pre-line;
     line-height: 20px;
+
+    @include maxw(1200px) {
+    	white-space: normal;
+    	margin-right: 15px;
+    }
+
+    @include maxw(860px) {
+    	margin-left: 20px;
+    }
   }
 
   .container {
@@ -949,6 +981,7 @@ $rose_color: #d53257;
   }
   @include maxw(767px) {
     width: 100%!important;
+    margin-top: 50px;
   }
 }
 
@@ -959,6 +992,9 @@ $rose_color: #d53257;
   cursor: default;
   margin-left: 60px;
 
+	@include maxw(860px) {
+    	margin-left: 20px;
+    }
   @include maxw(767px) {
     margin-right: 30px;
   }
@@ -966,6 +1002,13 @@ $rose_color: #d53257;
 .header_footer form {
   margin-left: 60px;
 
+  input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+  	color: black!important;
+  }
+
+	@include maxw(860px) {
+    	margin-left: 20px;
+    }
   @include maxw(767px) {
     margin-right: 30px;
   }
@@ -994,7 +1037,7 @@ $rose_color: #d53257;
 }
 @media (max-width: 1200px) {
   .header_footer {
-    form input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]), form textarea, form .button, form button, form input[type="submit"] {
+    form input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
       max-width: 100%!important;
       width: 100%!important;
     }
@@ -1051,7 +1094,7 @@ $rose_color: #d53257;
 .header_form_row .but:hover {
   opacity: 0.7;
 }
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   .header_form{
     max-width: 100%;
   }
@@ -1063,9 +1106,6 @@ $rose_color: #d53257;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-  }
-  .header_form_col{
-    padding-right: 15px;
   }
   .header_form__field {
     height: 35px;
