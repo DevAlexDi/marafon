@@ -28,6 +28,13 @@ $(document).ready(function() {
         $(this).next('ul').fadeToggle();
     });
 
+    // РАЗВЕРНУТЬ ПРОГРАММУs
+
+    $('.open-hidden').click(function(){
+        $(this).slideUp();
+        $(this).next('.hide').slideDown();
+    });
+
     $('.howto .slider').each(function(){
         var slider = $(this);
         var prev = $(this).siblings('.slider-prev');
