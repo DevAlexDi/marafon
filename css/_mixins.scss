@@ -1,0 +1,174 @@
+@mixin minw($min-width) {
+    @media (min-width: $min-width) {
+        @content;
+    }
+}
+@mixin maxw($max-width) {
+    @media (max-width: $max-width) {
+        @content;
+    }
+}
+@mixin box-sizing($border-box){
+	-webkit-box-sizing: $border-box;
+	-moz-box-sizing: $border-box;
+    box-sizing: $border-box;
+}
+@mixin border-radius($border-radius){
+	-webkit-border-radius:$border-radius;
+	-moz-border-radius:$border-radius;
+	border-radius:$border-radius;
+}
+@mixin transition ($transitions...){
+	-webkit-transition: $transitions;
+	-moz-transition: $transitions;
+	-o-transition: $transitions;
+	transition: $transitions;
+}
+@mixin transform ($transforms...){
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	transform: $transforms;
+}
+@mixin rotate ($degree){
+	-webkit-transform: rotate($degree);
+	-moz-transform: rotate($degree); 
+	-ms-transform: rotate($degree);  
+	-o-transform: rotate($degree); 
+	transform: rotate($degree);
+}
+@mixin scale ($scaleX, $scaleY){
+	-webkit-transform: scale($scaleX, $scaleY);
+	-moz-transform: scale($scaleX, $scaleY); 
+	-ms-transform: scale($scaleX, $scaleY);  
+	-o-transform: scale($scaleX, $scaleY); 
+	transform: scale($scaleX, $scaleY);
+}
+@mixin translate3d($x,$y,$z){
+	-webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+   	transform: translate3d($x, $y, $z);
+}
+@mixin centering ($position,$x,$y,$left,$top) {
+	width: 100%;
+    position: $position;
+    top: $top;
+    left: $left;
+    -moz-transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+@mixin origin($x,$y){
+	-webkit-transform-origin: $x $y;
+    -moz-transform-origin: $x $y;
+    -o-transform-origin: $x $y;
+    -ms-transform-origin: $x $y;
+    transform-origin: $x $y;
+}
+
+@mixin placeholder($color, $font, $weight, $size){
+	&::-webkit-input-placeholder {
+	    color: $color;
+	    font-family: $font;
+	    font-weight: $weight;
+	    font-size: $size;
+	}
+	&:-moz-placeholder {
+	    color: $color;
+	    font-family: $font;
+	    font-weight: $weight;
+	    font-size: $size;
+	}
+	&::-moz-placeholder {
+	    color: $color;
+	    font-family: $font;
+	    font-weight: $weight;
+	    font-size: $size;
+	}
+	&:-ms-input-placeholder {
+	    color: $color;
+	    font-family: $font;
+	    font-weight: $weight;
+	    font-size: $size;
+	}
+}
+
+@mixin hover-line-from-left ($color-of-hover, $height-of-line){
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: "";
+	  	position: absolute;
+	  	z-index: -1;
+	  	left: 0;
+	  	right: 100%;
+	  	bottom: 0;
+	  	background: $color-of-hover;
+	  	height: $height-of-line;
+	  	-webkit-transition-property: right;
+	  	transition-property: right;
+	  	-webkit-transition-duration: 0.2s;
+	  	transition-duration: 0.2s;
+	  	-webkit-transition-timing-function: ease-out;
+	  	transition-timing-function: ease-out;
+	}
+	&:hover:before,
+	&:focus:before,
+	&:active:before {
+		right: 0;
+	}
+}
+
+@mixin keyframe ($animation_name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin animation ($name, $duration, $timing-function, $delay, $iteration-count, $direction, $fill-mode, $play-state) {
+	-webkit-animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode $play-state;
+	-moz-animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode $play-state;
+	-o-animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode $play-state;
+	animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode $play-state;
+}
+@include keyframe(move) {
+    0% {
+        @include translate3d(0,0,0);
+        opacity: 1;
+    }
+
+    49% {
+        @include translate3d(-50%,0,0);
+        opacity: 0;
+    }
+    51% {
+        @include translate3d(50%,0,0);
+        opacity: 0;
+    }
+
+    100% {
+        @include translate3d(0,0,0);
+        opacity: 1;
+    }
+}
