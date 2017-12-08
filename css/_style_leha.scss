@@ -220,6 +220,13 @@
 				height: 100%;
 				background: $white;
 				box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                .img-resp{
+                    position: absolute;
+                    display: block;
+                    max-width: 100%;
+                    right: 48%;
+                    bottom: -65px;
+                }
 				.text {
 					padding: 30px;
 					text-align: center;
@@ -332,4 +339,10 @@
 			}
 		}
 	}
+}
+
+.howto .slider .item .right .text p{
+    strong{
+        color: #000;
+    }
 }
