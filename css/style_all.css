@@ -1060,6 +1060,14 @@ header {
   header h1 {
     font-size: 80px;
     line-height: 95px; }
+    @media (max-width: 670px) {
+      header h1 {
+        font-size: 70px;
+        line-height: 85px; } }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 40px;
+        line-height: 60px; } }
   @media (max-width: 1200px) {
     header {
       background-position: right -30px top;
@@ -1113,15 +1121,16 @@ header {
       position: static;
       display: block;
       margin: 0 auto 20px;
-      width: 200px;
+      width: 300px;
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
     .ticket-wrp .text {
-      max-width: 100%;
-      text-align: center; }
-      .ticket-wrp .text h2, .ticket-wrp .text .title {
+      max-width: 100%; }
+      .ticket-wrp .text h2 {
         text-align: center !important; }
       .ticket-wrp .text h2 {
-        margin-top: 15px; } }
+        margin-top: 15px; }
+      .ticket-wrp .text .about-form {
+        text-align: center; } }
 
 /*# sourceMappingURL=style_all.css.map */

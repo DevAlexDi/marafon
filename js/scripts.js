@@ -20,7 +20,13 @@ $(document).ready(function() {
         });
         $('body').css({'overflow-y': 'auto'});
     });
-    
+
+    // ГАМБУРГЕР В ШАПКЕ
+
+    $('.sandwich').click(function(){
+        $(this).toggleClass('active');
+        $(this).next('ul').fadeToggle();
+    });
     
     $('.new-slider-init').slick({
       centerMode: true,
