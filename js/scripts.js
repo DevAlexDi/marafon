@@ -23,7 +23,7 @@ $(document).ready(function() {
         $('body').css({'overflow-y':'hidden'});
         return false;
     });
-    
+
     $('.dialogs').on('click', '.close, .close-bg', function () {
         $('.dialogs .popup').removeClass('active');
         $('.dialogs').animate({'opacity': 0}, 200, function () {

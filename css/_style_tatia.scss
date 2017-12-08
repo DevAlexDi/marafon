@@ -610,6 +610,116 @@ $rose_color: #d53257;
   }
 }
 
+.whats-next {
+  padding: 110px 0 250px;
+  background: url(#{$imgpath}/bonus1_bg.jpg) no-repeat left top;
+
+  .wrap {
+    position: relative;
+  }
+
+  .bonus_top {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+
+    @include maxw(640px) {
+      font-size: 25px;
+    }
+  }
+  h2 {
+    font-size: 70px;
+    margin: 5px 0 50px;
+  }
+  .macbook {
+    float: right;
+    margin: 10px -97px 0 -70px;
+    position: relative;
+    &.free {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 53px;
+        top: -48px;
+        @extend .sprite-ico-free;
+      }
+    }
+  }
+  .text-wrp {
+    font-size: 16px;
+    line-height: 26px;
+    color: $black_a;
+    font-weight: 300;
+    ul {
+      color: $black;
+      font-weight: 500;
+      font-size: 17px;
+      margin: 30px 0;
+    }
+
+    p {
+      font-size: 18px;
+      color: black;
+      white-space: pre-line;
+      line-height: 28px;
+      font-weight: 300;
+
+      &.big_text {
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+        line-height: 35px;
+      }
+
+      &.grey {
+        font-size: 17px;
+        line-height: 27px;
+        color: #646464;
+        margin: 25px 0;
+      }
+    }
+  }
+  @include maxw(1200px) {
+    background-size: cover;
+    background-position: left top;
+    padding-bottom: 80px;
+    padding-top: 150px;
+    .macbook {
+      float: none;
+      margin: 20px auto;
+      text-align: center;
+      max-width: 640px;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      &.free:after {
+        right: 0;
+      }
+    }
+    .text-wrp {
+      p {
+        white-space: normal;
+      }
+    }
+  }
+  @include maxw(860px) {
+    padding-top: 45px;
+
+    .bonus_top {
+      margin-bottom: 30px;
+    }
+  }
+  @include maxw(640px) {
+    h2 {
+      line-height: 80px;
+    }
+  }
+}
+
 .last_sec {
   h2 {
     font-size: 65px;

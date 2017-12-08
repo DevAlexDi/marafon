@@ -39,7 +39,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
-.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm .button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
+.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm .button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
   background-image: url("../img/sprite-s43daf6fcb9.png");
   background-repeat: no-repeat; }
 
@@ -88,7 +88,7 @@
   height: 21px;
   width: 21px; }
 
-.sprite-ico-free {
+.sprite-ico-free, .whats-next .macbook.free:after {
   background-position: 0 -238px;
   height: 138px;
   width: 138px; }
@@ -1789,6 +1789,86 @@ form {
       padding: 70px 0; }
       .new_year a {
         margin-top: 45px; } }
+
+.whats-next {
+  padding: 110px 0 250px;
+  background: url(../img/bonus1_bg.jpg) no-repeat left top; }
+  .whats-next .wrap {
+    position: relative; }
+  .whats-next .bonus_top {
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center; }
+    @media (max-width: 640px) {
+      .whats-next .bonus_top {
+        font-size: 25px; } }
+  .whats-next h2 {
+    font-size: 70px;
+    margin: 5px 0 50px; }
+  .whats-next .macbook {
+    float: right;
+    margin: 10px -97px 0 -70px;
+    position: relative; }
+    .whats-next .macbook.free:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 53px;
+      top: -48px; }
+  .whats-next .text-wrp {
+    font-size: 16px;
+    line-height: 26px;
+    color: #646464;
+    font-weight: 300; }
+    .whats-next .text-wrp ul {
+      color: #141414;
+      font-weight: 500;
+      font-size: 17px;
+      margin: 30px 0; }
+    .whats-next .text-wrp p {
+      font-size: 18px;
+      color: black;
+      white-space: pre-line;
+      line-height: 28px;
+      font-weight: 300; }
+      .whats-next .text-wrp p.big_text {
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+        line-height: 35px; }
+      .whats-next .text-wrp p.grey {
+        font-size: 17px;
+        line-height: 27px;
+        color: #646464;
+        margin: 25px 0; }
+  @media (max-width: 1200px) {
+    .whats-next {
+      background-size: cover;
+      background-position: left top;
+      padding-bottom: 80px;
+      padding-top: 150px; }
+      .whats-next .macbook {
+        float: none;
+        margin: 20px auto;
+        text-align: center;
+        max-width: 640px;
+        width: 100%; }
+        .whats-next .macbook img {
+          width: 100%; }
+        .whats-next .macbook.free:after {
+          right: 0; }
+      .whats-next .text-wrp p {
+        white-space: normal; } }
+  @media (max-width: 860px) {
+    .whats-next {
+      padding-top: 45px; }
+      .whats-next .bonus_top {
+        margin-bottom: 30px; } }
+  @media (max-width: 640px) {
+    .whats-next h2 {
+      line-height: 80px; } }
 
 .last_sec h2 {
   font-size: 65px;
