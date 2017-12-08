@@ -431,10 +431,25 @@ header {
   background-position: center top;
   color: $white;
   padding: 140px 0 148px;
+
+  h2 {
+    margin-bottom: 80px;
+  }
+  
+  @include maxw(1200px) {
+    padding-top: 85px;
+  }
   @include maxw(980px) {
     padding-bottom: 50px;
-    background-image: url(#{$imgpath}/bg/programm.jpg);
   }
+  @include maxw(640px) {
+    padding-top: 40px;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+  }
+
   .day {
     margin-bottom: 30px;
     .top {
@@ -484,7 +499,7 @@ header {
         span {
           display: block;
           font-size: 20px;
-          font-weight: normal;
+          font-weight: 100;
           letter-spacing: 0.7em;
           text-transform: uppercase;
         }
@@ -543,5 +558,9 @@ header {
     margin: 0 auto;
     width: 350px;
     max-width: 100%;
+
+    i {
+      @extend .sprite-rol;
+    }
   }
 }
