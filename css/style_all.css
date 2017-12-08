@@ -897,10 +897,25 @@ form {
 
 .start.start-bg-stile {
   background-image: url(../img/bg-1-space.jpg);
+  padding: 150px 0 160px;
   background-size: cover;
   background-position: center; }
   .start.start-bg-stile h2 {
     color: #fff; }
+  .start.start-bg-stile:before {
+    height: 32px;
+    margin: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(../img/white_bg.png);
+    background-size: cover;
+    background-position: top center; }
+  .start.start-bg-stile:after {
+    bottom: 19px; }
 
 @media (max-width: 1199px) {
   .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow.slick-next {
@@ -920,7 +935,20 @@ form {
     padding-top: 0; }
 
   .new-slider-coments-wr .for-slider-wr-new .new-slider-init {
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+
+  .start.start-bg-stile h2 {
+    font-size: 29px;
+    line-height: 48px; }
+
+  .start.start-bg-stile {
+    padding: 100px 0 110px; }
+
+  .new-slider-coments-wr .for-slider-wr-new .new-slider-init .one-slide-wr .image-wr {
+    padding: 15px 10px; }
+
+  .new-slider-coments-wr .for-slider-wr-new .new-slider-init .one-slide-wr {
+    padding: 10px 15px; } }
 header {
   background: #151926 url(../img/header_bg.jpg) no-repeat center top;
   color: #fff;
@@ -1177,11 +1205,30 @@ header {
 
 .again {
   background: url(../img/again_bg.png) no-repeat center top;
-  padding: 130px 0 165px; }
+  padding: 130px 0 150px; }
+  @media (max-width: 750px) {
+    .again {
+      padding: 80px 0 50px; } }
+  @media (max-width: 640px) {
+    .again {
+      padding: 60px 0;
+      background-size: cover; } }
   .again h2 {
     color: white;
     text-align: left;
     font-size: 70px;
-    line-height: 70px; }
+    line-height: 70px;
+    margin-bottom: 50px; }
+    @media (max-width: 640px) {
+      .again h2 {
+        font-size: 60px;
+        margin-bottom: 35px; } }
+  .again ul li {
+    color: #b9babb;
+    font-size: 18px;
+    margin-bottom: 15px; }
+    .again ul li:before {
+      width: 10px;
+      background: url(../img/again_marker.png) 0 0; }
 
 /*# sourceMappingURL=style_all.css.map */
