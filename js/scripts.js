@@ -28,6 +28,22 @@ $(document).ready(function() {
         $(this).next('ul').fadeToggle();
     });
     
+    $('.howto .slider').each(function(){
+        var slider = $(this);
+        var prev = $(this).siblings('.slider-prev');
+        var next = $(this).siblings('.slider-next');
+        var pager = $(this).siblings('.slider-pager');
+        slider.bxSlider({
+            mode: 'fade',
+            slideMargin: 0,
+            adaptiveHeight: true,
+            touchEnabled:false,
+            prevSelector: prev,
+            nextSelector: next,
+            pagerCustom: pager
+        });
+    });
+    
     $('.new-slider-init').slick({
       centerMode: true,
       centerPadding: '30%',
