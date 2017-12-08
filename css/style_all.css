@@ -238,7 +238,7 @@ body, html {
 .clear {
   clear: both; }
 
-.clearfix:after, .w3:after, .w4:after {
+.clearfix:after, .w3:after, .w4:after, .know-more:after {
   display: table;
   content: '';
   clear: both; }
@@ -1369,14 +1369,14 @@ header {
 
 .again {
   background: url(../img/again_bg.png) no-repeat center top;
-  padding: 130px 0 150px; }
+  padding: 130px 0 150px;
+  background-size: cover; }
   @media (max-width: 750px) {
     .again {
       padding: 80px 0 50px; } }
   @media (max-width: 640px) {
     .again {
-      padding: 60px 0;
-      background-size: cover; } }
+      padding: 60px 0; } }
   .again h2 {
     color: white;
     text-align: left;
@@ -1394,5 +1394,102 @@ header {
     .again ul li:before {
       width: 10px;
       background: url(../img/again_marker.png) 0 0; }
+
+.know-more {
+  position: relative; }
+  .know-more .right {
+    width: 50%;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    padding-bottom: 60px;
+    z-index: 1; }
+    .know-more .right .text {
+      padding: 30px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: auto;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+      @media (max-width: 1620px) {
+        .know-more .right .text {
+          margin-top: 0; } }
+      @media (max-width: 1700px) {
+        .know-more .right .text h2 {
+          font-size: 60px; } }
+      @media (max-width: 1366px) {
+        .know-more .right .text h2 {
+          font-size: 50px; } }
+      .know-more .right .text .title {
+        letter-spacing: 0.5em;
+        margin: 5px 0 0; }
+      .know-more .right .text p {
+        line-height: 26px;
+        white-space: pre-line;
+        color: #646464;
+        font-size: 16px;
+        font-weight: 300; }
+        .know-more .right .text p.big_text {
+          font-weight: 700;
+          font-size: 25px;
+          color: black;
+          margin: 30px 0; }
+        @media (max-width: 1620px) {
+          .know-more .right .text p {
+            white-space: normal; } }
+      .know-more .right .text a {
+        letter-spacing: 0.2em;
+        margin-top: 30px; }
+        @media (max-width: 430px) {
+          .know-more .right .text a {
+            font-size: 11px;
+            padding: 0 10px; }
+            .know-more .right .text a i {
+              margin-right: 7px; } }
+  .know-more .left {
+    width: 50%;
+    height: 600px;
+    background: url(../img/know_more.jpg) no-repeat center; }
+  @media (max-width: 1200px) {
+    .know-more .left,
+    .know-more .right {
+      width: 100%;
+      max-width: 100%;
+      float: none;
+      clear: both;
+      position: static;
+      margin: 0 !important;
+      height: auto; }
+      .know-more .left .text,
+      .know-more .right .text {
+        width: 100%;
+        position: static;
+        top: 0;
+        left: 0;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0); }
+    .know-more .left {
+      height: 600px;
+      background-size: cover; }
+    .know-more .right {
+      padding-bottom: 0; } }
+  @media (max-width: 640px) {
+    .know-more .right .text {
+      padding: 30px 2%; }
+    .know-more .left {
+      height: 300px; } }
+
+.lift-up {
+  margin-top: -60px;
+  position: relative;
+  z-index: 2; }
 
 /*# sourceMappingURL=style_all.css.map */
