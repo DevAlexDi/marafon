@@ -1162,4 +1162,13 @@ header {
     bottom: -15px;
     margin: 0 0 0 -9px; }
 
+.again {
+  background: url(../img/again_bg.png) no-repeat center top;
+  padding: 130px 0 165px; }
+  .again h2 {
+    color: white;
+    text-align: left;
+    font-size: 70px;
+    line-height: 70px; }
+
 /*# sourceMappingURL=style_all.css.map */
