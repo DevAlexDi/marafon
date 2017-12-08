@@ -1,0 +1,52 @@
+.new-slider-coments-wr{
+    padding: 70px 0;
+    .title{
+        letter-spacing: 0.5em;
+        margin-bottom: 50px;
+    }
+    .styles-sl-sec{
+        text-align: center;
+        font-size: 18px;
+        color: #646464;
+            line-height: 30px;
+        strong{
+            color: #000;
+        }
+    }
+    .for-slider-wr-new{
+        .new-slider-init{
+            padding-bottom: 50px;
+            .one-slide-wr{
+                outline: none;
+                padding: 20px 30px;
+                transition: 0.3s;
+                opacity: 0.3;
+                &.slick-center{
+                    opacity: 1;
+                }
+                .image-wr{
+                    height: 250px;
+                    -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                    
+                    padding: 25px 35px;
+                    img{
+                        display: block;
+                        max-width: 100%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+            .slick-arrow{
+                display: block;
+                position: absolute;
+                bottom: -50px;
+                left: 50%;
+            }
+            
+        }
+    }
+    
+    
+    
+}
