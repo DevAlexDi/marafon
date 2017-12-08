@@ -147,6 +147,14 @@ header {
   h1 {
     font-size: 80px;
     line-height: 95px;
+    @include maxw(670px) {
+      font-size: 70px;
+      line-height: 85px;
+    }
+    @include maxw(600px) {
+      font-size: 40px;
+      line-height: 60px;
+    }
   }
   @include maxw(1200px) {
     background-position: right -30px top;
@@ -216,18 +224,72 @@ header {
       position: static;
       display: block;
       margin: 0 auto 20px;
-      width: 200px;
+      width: 300px;
       @include translate3d(0,0,0);
     }
     .text {
       max-width: 100%;
-      text-align: center;
-      h2, .title {
+      h2 {
         text-align: center !important;
       }
       h2 {
         margin-top: 15px;
       }
+      .about-form {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.start {
+  background: #14181c url(#{$imgpath}/start_bg.jpg) no-repeat center top;
+  color: black;
+  padding: 150px 0 108px;
+  position: relative;
+  @include maxw(980px) {
+    padding: 100px 0;
+  }
+  @include maxw(450px) {
+    padding: 70px 0 40px;
+  }
+  .title {
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 55px;
+    line-height: 72px;
+    @include maxw(450px) {
+      font-size: 50px;
+      line-height: 65px;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    @extend .sprite-ico-mouse;
+    left: 50%;
+    bottom: -15px;
+    margin: 0 0 0 -9px;
+  }
+}
+
+.again {
+  background: url(#{$imgpath}/again_bg.png) no-repeat center top;
+  padding: 130px 0 165px;
+
+  h2 {
+    color: white;
+    text-align: left;
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  ul {
+    li {
+      
     }
   }
 }
