@@ -39,7 +39,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
-.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
+.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
   background-image: url("../img/sprite-s43daf6fcb9.png");
   background-repeat: no-repeat; }
 
@@ -113,7 +113,7 @@
   height: 26px;
   width: 17px; }
 
-.sprite-ico-mouse2 {
+.sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after {
   background-position: 0 -469px;
   height: 26px;
   width: 17px; }
@@ -919,7 +919,7 @@ form {
 
 .my-rev-new {
   padding: 142px 0 75px;
-  margin-top: -60px;
+  margin-top: -61px;
   text-align: center;
   background-image: url(../img/rev-bg-new.jpg);
   background-position: center; }
@@ -1089,6 +1089,115 @@ form {
 
 .howto .slider .item .right .text p strong {
   color: #000; }
+
+.start.start-bg-stile.shmulskiy-2 {
+  padding: 150px 0 110px;
+  background-image: url(../img/shmulskiy-2-bg.jpg); }
+  .start.start-bg-stile.shmulskiy-2 p {
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px; }
+    .start.start-bg-stile.shmulskiy-2 p.c1 {
+      color: #646464;
+      margin-bottom: 30px; }
+    .start.start-bg-stile.shmulskiy-2 p.c2 {
+      margin-bottom: 30px; }
+  .start.start-bg-stile.shmulskiy-2 img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 35px; }
+  .start.start-bg-stile.shmulskiy-2 .for-align {
+    text-align: center; }
+
+.shmulskiy {
+  margin-top: -60px;
+  padding-top: 168px;
+  background: url(../img/shmulskiy-1-bg.jpg) no-repeat center top;
+  color: #fff; }
+  .shmulskiy .text {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: 0; }
+    .shmulskiy .text h2, .shmulskiy .text .title {
+      text-align: left; }
+    .shmulskiy .text .title {
+      opacity: 0.3;
+      letter-spacing: 0.5em; }
+    .shmulskiy .text p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 30px;
+      white-space: pre-line;
+      margin: 25px 0 35px; }
+    .shmulskiy .text ul {
+      color: #b9babb;
+      font-size: 17px;
+      line-height: 33px; }
+  .shmulskiy .triggers {
+    margin-top: 116px; }
+    @media (max-width: 640px) {
+      .shmulskiy .triggers {
+        margin-top: 40px; } }
+    .shmulskiy .triggers .item {
+      background: #fff;
+      padding: 73px 50px 25px;
+      height: 250px;
+      text-align: center;
+      line-height: 28px;
+      color: #646464;
+      font-size: 18px;
+      font-weight: 300;
+      white-space: pre-line;
+      -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); }
+      .shmulskiy .triggers .item span {
+        color: #141414;
+        font-size: 45px;
+        font-weight: 500;
+        display: inline-block;
+        margin-bottom: 34px; }
+      @media (max-width: 1200px) {
+        .shmulskiy .triggers .item {
+          padding: 50px 2% 30px;
+          height: 180px;
+          font-size: 14px;
+          line-height: 20px; }
+          .shmulskiy .triggers .item span {
+            font-size: 32px;
+            margin-bottom: 20px; } }
+      @media (max-width: 640px) {
+        .shmulskiy .triggers .item {
+          padding: 30px 2% 20px;
+          height: auto;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 0 !important; }
+          .shmulskiy .triggers .item span {
+            font-size: 32px;
+            margin-bottom: 20px; } }
+  @media (max-width: 640px) {
+    .shmulskiy {
+      background-position: right -1200px top;
+      position: relative;
+      z-index: 2; }
+      .shmulskiy .wrap {
+        position: relative;
+        z-index: 3; }
+      .shmulskiy:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: #141414;
+        opacity: 0.6; }
+      .shmulskiy .text .title {
+        opacity: 1;
+        margin-bottom: 20px; } }
 
 @media (max-width: 1199px) {
   .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow.slick-next {

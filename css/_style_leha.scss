@@ -144,7 +144,7 @@
 .my-rev-new{
    
     padding: 142px 0 75px;
-    margin-top: -60px;
+    margin-top: -61px;
     text-align: center;
     background-image: url(../img/rev-bg-new.jpg);
     background-position: center;
@@ -345,4 +345,139 @@
     strong{
         color: #000;
     }
+}
+
+.start.start-bg-stile{
+    &.shmulskiy-2{
+            padding: 150px 0 110px;
+        background-image: url(../img/shmulskiy-2-bg.jpg);
+        &:after { 
+            @extend .sprite-ico-mouse2; 
+        }
+        p{
+            text-align: center;
+            line-height: 28px;
+             font-size: 18px;
+            &.c1{
+                color: #646464;
+               
+                margin-bottom: 30px;
+            }
+            &.c2{
+                margin-bottom: 30px;
+            }
+        }
+        img{
+            display: block;
+            max-width: 100%;
+            margin: auto;
+            margin-bottom: 35px;
+        }
+        .for-align{
+            text-align: center;
+        }
+    }
+}
+
+.shmulskiy {
+	margin-top: -60px;
+	padding-top: 168px;
+	background: url(../img/shmulskiy-1-bg.jpg) no-repeat center top;
+	color: $white;
+	.text {
+		max-width: 650px;
+		margin-left: auto;
+		margin-right: 0;
+		h2, .title {
+			text-align: left;
+		}
+		.title {
+			opacity: 0.3;
+			letter-spacing: 0.5em;
+		}
+		p {
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 30px;
+			white-space: pre-line;
+			margin: 25px 0 35px;
+		}
+		ul {
+			color: $white_b;
+			font-size: 17px;
+			line-height: 33px;
+		}
+	}
+	.triggers {
+		margin-top: 116px;
+		@include maxw(640px) {
+			margin-top: 40px;
+		}
+		.item {
+			background: $white;
+			padding: 73px 50px 25px;
+			height: 250px;
+			text-align: center;
+			line-height: 28px;
+			color: $black_a;
+			font-size: 18px;
+			font-weight: 300;
+			white-space: pre-line;
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+			span {
+				color: $black;
+				font-size: 45px;
+				font-weight: 500;
+				display: inline-block;
+				margin-bottom: 34px;
+			}
+			@include maxw(1200px) {
+				padding: 50px 2% 30px;
+				height: 180px;
+				font-size: 14px;
+				line-height: 20px;
+				span {
+					font-size: 32px;
+					margin-bottom: 20px;
+				}
+			}
+			@include maxw(640px) {
+				padding: 30px 2% 20px;
+				height: auto;
+				font-size: 14px;
+				line-height: 20px;
+				span {
+					font-size: 32px;
+					margin-bottom: 20px;
+				}
+				// box-shadow: none;
+				margin-bottom: 0 !important;
+			}			
+		}
+	}
+	@include maxw(640px) {
+		background-position: right -1200px top;
+		position: relative;
+		z-index: 2;
+		.wrap {
+			position: relative;
+			z-index: 3;
+		}
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			z-index: -1;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+			background: $black;
+			opacity: 0.6;
+		}
+		.text .title {
+			opacity: 1;
+			margin-bottom: 20px;
+		}
+	}
 }
