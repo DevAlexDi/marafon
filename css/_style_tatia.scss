@@ -1,6 +1,6 @@
 $rose_color: #d53257;
 
-header {
+.header {
   background: #151926 url(#{$imgpath}/header_bg.jpg) no-repeat center top;
   color: $white;
   padding: 20px 30px 33px;
@@ -606,6 +606,133 @@ header {
 
     a {
       margin-top: 45px;
+    }
+  }
+}
+
+.last_sec {
+  h2 {
+    font-size: 65px;
+    line-height: 80px;
+  }
+
+  .wrap {
+    margin-top: 50px;
+
+    .title {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  .text {
+    padding-top: 25px!important;
+
+    p {
+      font-size: 17px;
+      font-weight: 100;
+      white-space: pre-line;
+      color: white;
+
+      &.title {
+        font-size: 18px;
+        font-weight: 100;
+        white-space: pre-line;
+        color: white!important;
+      }
+
+      &.big_text {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .ticket-wrp {
+    img {
+      top: -47px;
+    }
+
+    @include maxw(1200px) {
+      img {
+        width: 30%;
+        height: auto;
+        left: 2%;
+        top: 50%;
+        @include translate3d(0, -50%, 0);
+      }
+      .text {
+        max-width: 65%;
+      }
+    }
+    @include maxw(640px) {
+      img {
+        position: static;
+        display: block;
+        margin: 0 auto 20px;
+        width: 300px;
+        @include translate3d(0,0,0);
+      }
+      .text {
+        max-width: 100%;
+        h2 {
+          text-align: center !important;
+        }
+        h2 {
+          margin-top: 15px;
+        }
+        .about-form {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 115px 30px 35px;
+  @extend .clearfix;
+  .left {
+    color: $black_a;
+    font-weight: 300;
+    line-height: 21px;
+    font-size: 13px;
+    white-space: pre-line;
+    span {
+      font-size: 11px;
+    }
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .right {
+    text-align: right;
+    a {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 21px;
+      text-decoration: underline;
+      display: inline-block;
+      margin-left: 23px;
+    }
+  }
+  @include maxw(1200px) {
+    padding: 0 2% 20px;
+    .left,
+    .right {
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+    .right {
+      margin-bottom: 30px;
+      a {
+        margin: 0 10px;
+      }
     }
   }
 }

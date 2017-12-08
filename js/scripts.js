@@ -11,6 +11,19 @@ $(document).ready(function() {
 
     // МОДАЛЬНЫЕ ОКНА
 
+    $('.open-form').click(function(){
+        var category = $(this).attr('href');
+        var categoryForm = $('.dialogs ' + category);
+        $('.dialogs .popup').removeClass('active').hide();
+        categoryForm.show();
+        $('.dialogs').show();
+        $('.dialogs').animate({'opacity':1}, 200, function() {
+            categoryForm.addClass('active');
+        });
+        $('body').css({'overflow-y':'hidden'});
+        return false;
+    });
+    
     $('.dialogs').on('click', '.close, .close-bg', function () {
         $('.dialogs .popup').removeClass('active');
         $('.dialogs').animate({'opacity': 0}, 200, function () {
