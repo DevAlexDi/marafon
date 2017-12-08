@@ -278,18 +278,40 @@ header {
 
 .again {
   background: url(#{$imgpath}/again_bg.png) no-repeat center top;
-  padding: 130px 0 165px;
+  padding: 130px 0 150px;
+
+  @include maxw(750px) {
+    padding: 80px 0 50px;
+  }
+
+  @include maxw(640px) {
+    padding: 60px 0;
+    background-size: cover;
+  }
 
   h2 {
     color: white;
     text-align: left;
     font-size: 70px;
     line-height: 70px;
+    margin-bottom: 50px;
+
+    @include maxw(640px) {
+      font-size: 60px;
+      margin-bottom: 35px;
+    }
   }
 
   ul {
     li {
-      
+      color: #b9babb;
+      font-size: 18px;
+      margin-bottom: 15px;
+
+      &:before {
+        width: 10px;
+        background: url(../img/again_marker.png) 0 0;
+      }
     }
   }
 }

@@ -1170,11 +1170,30 @@ header {
 
 .again {
   background: url(../img/again_bg.png) no-repeat center top;
-  padding: 130px 0 165px; }
+  padding: 130px 0 150px; }
+  @media (max-width: 750px) {
+    .again {
+      padding: 80px 0 50px; } }
+  @media (max-width: 640px) {
+    .again {
+      padding: 60px 0;
+      background-size: cover; } }
   .again h2 {
     color: white;
     text-align: left;
     font-size: 70px;
-    line-height: 70px; }
+    line-height: 70px;
+    margin-bottom: 50px; }
+    @media (max-width: 640px) {
+      .again h2 {
+        font-size: 60px;
+        margin-bottom: 35px; } }
+  .again ul li {
+    color: #b9babb;
+    font-size: 18px;
+    margin-bottom: 15px; }
+    .again ul li:before {
+      width: 10px;
+      background: url(../img/again_marker.png) 0 0; }
 
 /*# sourceMappingURL=style_all.css.map */
