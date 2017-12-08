@@ -435,7 +435,7 @@ header {
   h2 {
     margin-bottom: 80px;
   }
-  
+
   @include maxw(1200px) {
     padding-top: 85px;
   }
@@ -561,6 +561,51 @@ header {
 
     i {
       @extend .sprite-rol;
+    }
+  }
+}
+
+.new_year {
+  background: url(../img/new_year_bg.jpg) no-repeat center top;
+  background-size: cover;
+  color: white;
+  padding: 130px 0 108px;
+  text-align: center;
+
+  .title {
+    font-size: 16px;
+    letter-spacing: 0.5em;
+  }
+
+  h2 {
+    font-size: 55px;
+    line-height: 70px;
+    margin: 35px 0 40px;
+  }
+
+  p {
+    white-space: pre-line;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  a {
+    margin-top: 55px;
+
+    @include maxw(340px) {
+      padding: 0 28px;
+
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+
+  @include maxw(640px) {
+    padding: 70px 0;
+
+    a {
+      margin-top: 45px;
     }
   }
 }

@@ -1616,4 +1616,34 @@ header {
     width: 350px;
     max-width: 100%; }
 
+.new_year {
+  background: url(../img/new_year_bg.jpg) no-repeat center top;
+  background-size: cover;
+  color: white;
+  padding: 130px 0 108px;
+  text-align: center; }
+  .new_year .title {
+    font-size: 16px;
+    letter-spacing: 0.5em; }
+  .new_year h2 {
+    font-size: 55px;
+    line-height: 70px;
+    margin: 35px 0 40px; }
+  .new_year p {
+    white-space: pre-line;
+    font-size: 20px;
+    font-weight: 100; }
+  .new_year a {
+    margin-top: 55px; }
+    @media (max-width: 340px) {
+      .new_year a {
+        padding: 0 28px; }
+        .new_year a i {
+          margin-right: 5px; } }
+  @media (max-width: 640px) {
+    .new_year {
+      padding: 70px 0; }
+      .new_year a {
+        margin-top: 45px; } }
+
 /*# sourceMappingURL=style_all.css.map */
