@@ -34,6 +34,10 @@ $(document).ready(function() {
         $('body').css({'overflow-y': 'auto'});
     });
 
+    $('.header_footer .modal-popup .modal-popup-close').click(function(e) {
+        $('.header_footer .modal-popup').animate({'right':'-350px'}, 200);
+    });
+
     // ГАМБУРГЕР В ШАПКЕ
 
     $('.sandwich').click(function(){
