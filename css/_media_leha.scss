@@ -2,14 +2,16 @@
     .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow{
            
         &.slick-next{
-             -webkit-transform: scale(0.5, 0.5) translateX(-105px);
-        -ms-transform: scale(0.5, 0.5) translateX(-105px);
-        transform: scale(0.5, 0.5) translateX(-105px);
+             
+            
+            -webkit-transform: scale(0.5, 0.5) translateX(10px);
+        -ms-transform: scale(0.5, 0.5) translateX(10px);
+        transform: scale(0.5, 0.5) translateX(10px);
         }
         &.slick-prev{
-             -webkit-transform: scale(0.5, 0.5) translateX(15px);
-        -ms-transform: scale(0.5, 0.5) translateX(15px);
-        transform: scale(0.5, 0.5) translateX(15px);
+             -webkit-transform: scale(0.5, 0.5) translateX(-85px);
+        -ms-transform: scale(0.5, 0.5) translateX(-85px);
+        transform: scale(0.5, 0.5) translateX(-85px);
         }
     }
     .new-slider-coments-wr {
