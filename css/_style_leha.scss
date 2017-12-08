@@ -105,7 +105,20 @@
             
         }
     }
-    
+   
     
     
 }
+
+.start{
+    
+    &.start-bg-stile{
+        background-image: url(../img/bg-1-space.jpg);
+        background-size: cover;
+        background-position: center;
+        h2{
+            color: #fff;
+        }
+    }
+} 
+

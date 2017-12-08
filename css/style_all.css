@@ -895,6 +895,13 @@ form {
             height: 20px;
             width: 12px; }
 
+.start.start-bg-stile {
+  background-image: url(../img/bg-1-space.jpg);
+  background-size: cover;
+  background-position: center; }
+  .start.start-bg-stile h2 {
+    color: #fff; }
+
 @media (max-width: 1199px) {
   .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow.slick-next {
     -webkit-transform: scale(0.5, 0.5) translateX(-105px);
