@@ -28,20 +28,47 @@ $(document).ready(function() {
       slidesToShow: 1,
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 1701,
           settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
+            centerPadding: '28%',
           }
         },
         {
-          breakpoint: 480,
+          breakpoint: 1601,
           settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
+            centerPadding: '25%',
+          }
+        },
+        {
+          breakpoint: 1401,
+          settings: {
+            centerPadding: '23%',
+          }
+        },
+        {
+          breakpoint: 1301,
+          settings: {
+            centerPadding: '20%',
+          }
+        },
+          {
+          breakpoint: 1200,
+          settings: {
+            centerPadding: '15%',
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            centerPadding: '10%',
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+         
+          
+            centerPadding: '0',
             slidesToShow: 1
           }
         }

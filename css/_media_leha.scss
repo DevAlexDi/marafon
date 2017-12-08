@@ -1,76 +1,31 @@
 @media (max-width: 1199px) {
-    .modal-order .modal-dialog .order-body .one-order p{
-        font-size: 16px;
+    .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow{
+           
+        &.slick-next{
+             -webkit-transform: scale(0.5, 0.5) translateX(-105px);
+        -ms-transform: scale(0.5, 0.5) translateX(-105px);
+        transform: scale(0.5, 0.5) translateX(-105px);
+        }
+        &.slick-prev{
+             -webkit-transform: scale(0.5, 0.5) translateX(15px);
+        -ms-transform: scale(0.5, 0.5) translateX(15px);
+        transform: scale(0.5, 0.5) translateX(15px);
+        }
     }
-    .modal-order .modal-dialog .order-head-modal .lvl-2 .sale-butt{
-        font-size: 17px;
-    }
-    .modal-order .modal-dialog .order-head-modal .lvl-1 .who-is p{
-        font-size: 16px;
-    }
-}
-
-
-@media (max-width: 991px) {
- 
-    .modal-order .modal-dialog .order-body .one-order p{
-        font-size: 13px;
-    }
-    .modal-order .modal-dialog .order-footer p{
-        font-size: 18px;
+    .new-slider-coments-wr {
+        padding: 30px 0 60px 0;
     }
 }
 
 @media (max-width: 767px) {
-    .modal-order .modal-dialog .order-head-modal .lvl-1{
-        flex-direction: column;
-        .who-is{
-            margin-left: auto;
-            padding-top: 15px;
-        }
+    .new-slider-coments-wr .for-slider-wr-new .new-slider-init .one-slide-wr .image-wr{
+        height: auto;
     }
-    .modal-order .modal-dialog .order-head-modal{
-        padding: 0 10px;
-        
+    .new-slider-coments-wr .for-slider-wr-new{
+        padding-top: 0;
     }
-    
-    .modal-order .modal-dialog .order-head-modal .lvl-1 .who-is p{
-        font-size: 12px;
-    }
-    .modal-order .modal-dialog .order-head-modal .lvl-2 .sale-butt{
-        font-size: 10px;
-    }
-    .modal-order .modal-dialog .order-body-wr{
-        padding: 0 10px;
-    }
-    .modal-order .modal-dialog .order-body .one-order .for-flex-align{
-        display: block;
-    }
-    .modal-order .modal-dialog .order-head-modal .lvl-2{
-        padding-bottom: 15px;
-    }
-    .modal-order .modal-dialog .order-body .one-order p{
-        text-align: left;
-        &.for-xs-sale-style{
-            text-align: right;
-        }
-        
-    }
-    .modal-order .modal-dialog .order-body .one-order p.bold-t{
-        margin-bottom: 15px;
-    }
-    .modal-order p, .modal-order span{
-        letter-spacing: 1px;
-    }
-    .modal-order .modal-dialog .order-body .one-order p{
-        font-size: 12px;
-    }
-    .modal-order .modal-dialog .order-footer{
-        padding: 10px;
-        display: block;
-    }
-    .modal-order .modal-dialog .order-footer p{
-        font-size: 15px;
+    .new-slider-coments-wr .for-slider-wr-new .new-slider-init {
+        padding-bottom: 20px;
     }
 }
 
