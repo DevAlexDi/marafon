@@ -27,7 +27,7 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $(this).next('ul').fadeToggle();
     });
-    
+
     $('.howto .slider').each(function(){
         var slider = $(this);
         var prev = $(this).siblings('.slider-prev');
