@@ -241,3 +241,37 @@ header {
     }
   }
 }
+
+.start {
+  background: #14181c url(#{$imgpath}/start_bg.jpg) no-repeat center top;
+  color: black;
+  padding: 150px 0 108px;
+  position: relative;
+  @include maxw(980px) {
+    padding: 100px 0;
+  }
+  @include maxw(450px) {
+    padding: 70px 0 40px;
+  }
+  .title {
+    letter-spacing: 0.5em;
+    margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 55px;
+    line-height: 72px;
+    @include maxw(450px) {
+      font-size: 50px;
+      line-height: 65px;
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    @extend .sprite-ico-mouse;
+    left: 50%;
+    bottom: -15px;
+    margin: 0 0 0 -9px;
+  }
+}
