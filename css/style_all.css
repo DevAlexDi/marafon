@@ -1091,8 +1091,11 @@ form {
   color: #000; }
 
 .start.start-bg-stile.shmulskiy-2 {
-  padding: 150px 0 110px;
-  background-image: url(../img/shmulskiy-2-bg.jpg); }
+  padding: 200px 0 110px;
+  background-image: url(../img/shmulskiy-2-bg.jpg);
+  margin-top: -206px; }
+  .start.start-bg-stile.shmulskiy-2 .for-align {
+    text-align: center; }
   .start.start-bg-stile.shmulskiy-2 p {
     text-align: center;
     line-height: 28px;
@@ -1102,13 +1105,9 @@ form {
       margin-bottom: 30px; }
     .start.start-bg-stile.shmulskiy-2 p.c2 {
       margin-bottom: 30px; }
-  .start.start-bg-stile.shmulskiy-2 img {
-    display: block;
-    max-width: 100%;
-    margin: auto;
-    margin-bottom: 35px; }
   .start.start-bg-stile.shmulskiy-2 .for-align {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 35px; }
 
 .shmulskiy {
   margin-top: -60px;
@@ -1122,8 +1121,10 @@ form {
     .shmulskiy .text h2, .shmulskiy .text .title {
       text-align: left; }
     .shmulskiy .text .title {
-      opacity: 0.3;
-      letter-spacing: 0.5em; }
+      opacity: 0.7;
+      color: #fff !important;
+      letter-spacing: 0.5em;
+      padding-bottom: 5px; }
     .shmulskiy .text p {
       font-weight: 300;
       font-size: 20px;
@@ -1132,8 +1133,10 @@ form {
       margin: 25px 0 35px; }
     .shmulskiy .text ul {
       color: #b9babb;
-      font-size: 17px;
+      font-size: 16px;
       line-height: 33px; }
+      .shmulskiy .text ul li:before {
+        top: 10px; }
   .shmulskiy .triggers {
     margin-top: 116px; }
     @media (max-width: 640px) {
@@ -1143,6 +1146,9 @@ form {
       background: #fff;
       padding: 73px 50px 25px;
       height: 250px;
+      position: relative;
+      top: -52px;
+      z-index: 5;
       text-align: center;
       line-height: 28px;
       color: #646464;
@@ -1212,7 +1218,24 @@ form {
 
   .howto .slider .item .right .img-resp {
     bottom: -43px;
-    max-width: 65px; } }
+    max-width: 65px; }
+
+  .start.start-bg-stile.shmulskiy-2 {
+    padding: 155px 0 80px; }
+
+  .shmulskiy .triggers .item {
+    top: -83px; }
+
+  .shmulskiy .wrap {
+    position: relative;
+    padding-bottom: 360px; }
+
+  .shmulskiy .triggers {
+    position: absolute;
+    width: 96%;
+    bottom: 0;
+    left: 0;
+    padding: 0 2%; } }
 @media (max-width: 767px) {
   .new-slider-coments-wr .for-slider-wr-new .new-slider-init .one-slide-wr .image-wr {
     height: auto; }
@@ -1235,6 +1258,18 @@ form {
 
   .new-slider-coments-wr .for-slider-wr-new .new-slider-init .one-slide-wr {
     padding: 10px 15px; } }
+@media (max-width: 640px) {
+  .shmulskiy .wrap {
+    padding-bottom: 400px; }
+
+  .shmulskiy {
+    padding-top: 50px; }
+
+  .shmulskiy .triggers .item {
+    top: 0; }
+
+  .start.start-bg-stile.shmulskiy-2 {
+    margin-top: -130px; } }
 header {
   background: #151926 url(../img/header_bg.jpg) no-repeat center top;
   color: #fff;
