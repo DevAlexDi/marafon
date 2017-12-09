@@ -1,5 +1,10 @@
 $rose_color: #d53257;
 
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .header {
   background: #151926 url(#{$imgpath}/header_bg.jpg) no-repeat center top;
   color: $white;
@@ -189,12 +194,39 @@ $rose_color: #d53257;
     margin-left: auto;
     padding-top: 27px;
 
-    form {
+    .form {
       margin-top: 30px;
+
+      .about-form {
+        font-size: 13px;
+        margin-top: 35px;
+        display: block;
+      }
     }
 
     button {
       padding: 0 10px;
+      width: 48%;
+      font-size: 13px;
+
+      &:first-child {
+        background-color: #624dd2;
+        margin-right: 2%;
+      }
+
+      @include maxw(1100px) {
+        width: 70%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      @include maxw(800px) {
+        width: 100%;
+      }
+
+      @include maxw(400px) {
+        font-size: 12px;
+      }
     }
 
     p {

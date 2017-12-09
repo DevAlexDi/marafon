@@ -1349,6 +1349,10 @@ form {
 
   .start.start-bg-stile.shmulskiy-2 {
     margin-top: -130px; } }
+.title {
+  font-size: 18px;
+  font-weight: 700; }
+
 .header {
   background: #151926 url(../img/header_bg.jpg) no-repeat center top;
   color: #fff;
@@ -1535,10 +1539,30 @@ form {
     margin-right: 0;
     margin-left: auto;
     padding-top: 27px; }
-    .ticket-wrp .text form {
+    .ticket-wrp .text .form {
       margin-top: 30px; }
+      .ticket-wrp .text .form .about-form {
+        font-size: 13px;
+        margin-top: 35px;
+        display: block; }
     .ticket-wrp .text button {
-      padding: 0 10px; }
+      padding: 0 10px;
+      width: 48%;
+      font-size: 13px; }
+      .ticket-wrp .text button:first-child {
+        background-color: #624dd2;
+        margin-right: 2%; }
+      @media (max-width: 1100px) {
+        .ticket-wrp .text button {
+          width: 70%;
+          margin-right: 0;
+          margin-bottom: 20px; } }
+      @media (max-width: 800px) {
+        .ticket-wrp .text button {
+          width: 100%; } }
+      @media (max-width: 400px) {
+        .ticket-wrp .text button {
+          font-size: 12px; } }
     .ticket-wrp .text p {
       font-size: 17px;
       line-height: 24px; }
