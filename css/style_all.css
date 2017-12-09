@@ -39,7 +39,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
-.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm .button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
+.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm div.button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
   background-image: url("../img/sprite-s43daf6fcb9.png");
   background-repeat: no-repeat; }
 
@@ -128,7 +128,7 @@
   height: 21px;
   width: 21px; }
 
-.sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm .button i {
+.sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm div.button i {
   background-position: 0 -542px;
   height: 25px;
   width: 22px; }
@@ -1352,7 +1352,7 @@ form {
 .header {
   background: #151926 url(../img/header_bg.jpg) no-repeat center top;
   color: #fff;
-  padding: 20px 30px 33px;
+  padding: 20px 30px 60px;
   position: relative; }
   @media (max-width: 350px) {
     .header {
@@ -1465,11 +1465,11 @@ form {
           line-height: 24px;
           font-size: 16px; } }
   .header .wrap {
-    margin-top: 38px; }
+    margin-top: 10px; }
     .header .wrap > .title {
       opacity: 0.5;
       letter-spacing: 0.3em;
-      margin-bottom: 30px; }
+      margin-bottom: 20px; }
     .header .wrap .date {
       font-size: 18px;
       text-align: center;
@@ -1499,8 +1499,8 @@ form {
         margin-right: -220px;
         background: #d53257; }
   .header h1 {
-    font-size: 80px;
-    line-height: 95px; }
+    font-size: 64px;
+    line-height: 75px; }
     @media (max-width: 670px) {
       .header h1 {
         font-size: 70px;
@@ -1529,12 +1529,14 @@ form {
     z-index: 1;
     display: block;
     left: -28px;
-    top: -103px; }
+    top: -70px; }
   .ticket-wrp .text {
     max-width: 650px;
     margin-right: 0;
     margin-left: auto;
-    padding-top: 10px; }
+    padding-top: 27px; }
+    .ticket-wrp .text form {
+      margin-top: 30px; }
     .ticket-wrp .text button {
       padding: 0 10px; }
     .ticket-wrp .text p {
@@ -1546,7 +1548,8 @@ form {
         font-weight: 700;
         line-height: 28px;
         text-transform: none;
-        margin-top: 6px; }
+        margin-top: 6px;
+        margin-bottom: 25px; }
   @media (max-width: 1200px) {
     .ticket-wrp img {
       width: 30%;
@@ -1680,7 +1683,7 @@ form {
           margin: 30px 0; }
         @media (max-width: 1620px) {
           .know-more .right .text p {
-            white-space: normal; } }
+            /*white-space: normal;*/ } }
       .know-more .right .text a {
         letter-spacing: 0.2em;
         margin-top: 30px; }
@@ -1948,6 +1951,9 @@ form {
   @media (max-width: 640px) {
     .whats-next h2 {
       line-height: 80px; } }
+  @media (max-width: 500px) {
+    .whats-next {
+      padding-bottom: 305px; } }
 
 .header_footer {
   background-image: url("../img/bonus2_bg.jpg");
@@ -1957,6 +1963,9 @@ form {
   position: relative;
   padding-top: 225px;
   padding-bottom: 85px; }
+  @media (max-width: 500px) {
+    .header_footer {
+      padding-top: 285px; } }
   .header_footer .text-center {
     text-align: center; }
   .header_footer .text-left {

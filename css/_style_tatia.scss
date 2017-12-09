@@ -3,7 +3,7 @@ $rose_color: #d53257;
 .header {
   background: #151926 url(#{$imgpath}/header_bg.jpg) no-repeat center top;
   color: $white;
-  padding: 20px 30px 33px;
+  padding: 20px 30px 60px;
   position: relative;
   @include maxw(350px) {
     padding-left: 2%;
@@ -104,11 +104,11 @@ $rose_color: #d53257;
     }
   }
   .wrap {
-    margin-top: 38px;
+    margin-top: 10px;
     & > .title {
       opacity: 0.5;
       letter-spacing: 0.3em;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     .date {
@@ -145,8 +145,8 @@ $rose_color: #d53257;
     }
   }
   h1 {
-    font-size: 80px;
-    line-height: 95px;
+    font-size: 64px;
+    line-height: 75px;
     @include maxw(670px) {
       font-size: 70px;
       line-height: 85px;
@@ -181,13 +181,17 @@ $rose_color: #d53257;
     z-index: 1;
     display: block;
     left: -28px;
-    top: -103px;
+    top: -70px;
   }
   .text {
     max-width: 650px;
     margin-right: 0;
     margin-left: auto;
-    padding-top: 10px;
+    padding-top: 27px;
+
+    form {
+      margin-top: 30px;
+    }
 
     button {
       padding: 0 10px;
@@ -204,6 +208,7 @@ $rose_color: #d53257;
         line-height: 28px;
         text-transform: none;
         margin-top: 6px;
+        margin-bottom: 25px;
       }
     }
   }
@@ -362,7 +367,7 @@ $rose_color: #d53257;
           margin: 30px 0;
         }
         @include maxw(1620px) {
-          white-space: normal;
+          /*white-space: normal;*/
         }
       }
       a {
@@ -558,10 +563,9 @@ $rose_color: #d53257;
     margin: 0 auto;
     width: 350px;
     max-width: 100%;
-
-    i {
-      @extend .sprite-rol;
-    }
+  }
+  div.button i {
+    @extend .sprite-rol;
   }
 }
 
