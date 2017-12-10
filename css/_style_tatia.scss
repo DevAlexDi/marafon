@@ -204,7 +204,7 @@ $rose_color: #d53257;
       }
     }
 
-    button {
+    .button {
       padding: 0 10px;
       width: 48%;
       font-size: 13px;
@@ -602,10 +602,10 @@ $rose_color: #d53257;
 }
 
 .new_year {
-  background: url(../img/new_year_bg.jpg) no-repeat center top;
+  background: url(../img/new_year_bg.jpg?v=1.1) no-repeat center top;
   background-size: cover;
   color: white;
-  padding: 130px 0 108px;
+  padding: 130px 0 455px;
   text-align: center;
 
   .title {
@@ -637,6 +637,10 @@ $rose_color: #d53257;
     }
   }
 
+  @include maxw(1100px) {
+      padding-bottom: 355px;
+  }
+
   @include maxw(640px) {
     padding: 70px 0;
 
@@ -647,8 +651,8 @@ $rose_color: #d53257;
 }
 
 .whats-next {
-  padding: 110px 0 250px;
-  background: url(#{$imgpath}/bonus1_bg.jpg) no-repeat left top;
+  padding: 445px 0 250px;
+  background: url(#{$imgpath}/bonus1_bg.jpg?v=1.1) no-repeat left top;
 
   .wrap {
     position: relative;
@@ -722,7 +726,6 @@ $rose_color: #d53257;
     background-size: cover;
     background-position: left top;
     padding-bottom: 260px;
-    padding-top: 150px;
     .macbook {
       float: none;
       margin: 20px auto;
@@ -741,6 +744,9 @@ $rose_color: #d53257;
         white-space: normal;
       }
     }
+  }
+  @include maxw(1100px) {
+    padding-top: 345px;
   }
   @include maxw(860px) {
     padding-top: 45px;
@@ -1275,6 +1281,269 @@ footer {
       margin-bottom: 30px;
       a {
         margin: 0 10px;
+      }
+    }
+  }
+}
+
+.soc_reg {
+  position: relative;
+
+  .ipad {
+    position: absolute;
+    width: 1081px;
+    height: 855px;
+    background: url(../img/ipad.png) no-repeat center;
+    background-size: cover;
+    top: 65px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .ipad_content {
+      margin: 117px 330px 0;
+
+      .content-block {
+          position: relative;
+          background: #fff;
+          box-shadow: 0 5px 20px -5px rgba(0, 0, 0, .15);
+
+          .card-img img {
+            width: 100%;
+          }
+
+          .wrapper-for-lgt {
+            padding: 12px;
+
+            .flag-container {
+                width: 46px;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+            .flag-container .current-flag {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+            }
+            .flag-container:hover {
+                cursor: pointer;
+            }
+            .selected-flag {
+                z-index: 1;
+                position: absolute;
+                width: 40px;
+                height: 100%;
+                padding: 11px 0 0 1px;
+            }
+            .wrapper-input-phone {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                border-bottom: 2px solid #c4c4c4;
+                padding: 5px 0 0 0;
+                height: 31px;
+                margin: 0 0 12px;
+            }
+            .wrapper-input-phone.focused {
+                outline: 0!important;
+                border-bottom: 1px solid #4d90cc;
+            }
+            .wrapper-input-phone.valid-field {
+                border-bottom: 1px solid #81ea84;
+            }
+            .wrapper-input-phone.invalid-field {
+                border-bottom: 1px solid #e67171;
+            }
+            .wrapper-input-phone .divider {
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                border-bottom: 1px solid #ccc;
+            }
+            .iti-arrow {
+                margin: -8px 3px 0 0;
+                right: 0;
+                width: 0;
+                left: 0;
+                height: 0;
+                border-left: 3px solid transparent;
+                border-right: 3px solid transparent;
+                border-top: 4px solid #555;
+                float: right;
+            }
+            .country-list {
+                position: absolute;
+                z-index: 2;
+                list-style: none;
+                text-align: left;
+                padding: 0;
+                margin: 0 0 0 -1px;
+                box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+                background-color: #fff;
+                border: 1px solid #ccc;
+                white-space: nowrap;
+                max-height: 200px;
+                overflow-y: scroll;
+                top: 30px;
+                width: 350px;
+                display: none;
+            }
+            .country-list .country {
+                padding: 5px 10px;
+            }
+            .country-list .country:hover {
+                background-color: rgba(0, 0, 0, .05);
+            }
+            .country-list .country-name {
+                margin-right: 6px;
+            }
+            .country-list .dial-code {
+                color: #999;
+            }
+            .input-phone {
+                border: none!important;
+                background: 0 0;
+                width: 58%!important;
+                position: absolute;
+                right: 45px;
+                height: 30px!important;
+                top: 3px;
+                font-size: 20px;
+            }
+            .input-phone:focus {
+                outline: 0;
+            }
+            .hide {
+                display: none;
+            }
+            .picked-code {
+                width: 60px;
+                position: absolute;
+                top: 9px;
+                left: 35px;
+                font-family: "Open Sans";
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 18px;
+                text-align: center;
+            }
+            .country .flag-box {
+                float: left;
+                margin: 0 8px 0 0;
+            }
+            #current-flag, .iti-flag.ru {
+              top: 0;
+              bottom: 0;
+              width: 20px;
+              height: 14px;
+              box-shadow: 0 0 1px 0 #888;
+              background-image: url(../img/flag_ru.png);
+              background-repeat: no-repeat;
+              background-color: #dbdbdb;
+            }
+          }
+
+          .card-sub-title {
+              padding: 0 20px 10px;
+              transition: all .1s;
+              font-size: 12px;
+              word-wrap: break-word;
+              font-weight: bold;
+              text-align: center;
+          }
+      }
+
+      .send-block {
+          position: relative;
+          font-size: 11px;
+          text-align: center;
+          transition: all .1s;
+          z-index: 1;
+
+          .main-cta {
+            text-align: center;
+            font-size: 16px;
+            padding: 20px 5px 5px;
+            font-weight: 300;
+            word-break: break-word;
+            display: block;
+
+            p {
+              margin: 0;
+            }
+          }
+
+          form {
+            padding-top: 15px;
+
+            .wrap-button {
+              display: flex;
+              margin-left: 0;
+              margin-right: 0;
+
+              div, a {
+                cursor: pointer;
+
+                img {
+                  width: 100%;
+                }
+              }
+            }
+          }
+      }
+
+      .multichannel::after, .multichannel::before {
+        content: "▾";
+        position: absolute;
+        opacity: 0;
+        color: rgba(46, 86, 174, 0.2);
+        line-height: 10px;
+        top: 0px;
+        left: 50%;
+        margin-left: -150px;
+        width: 300px;
+        height: 100px;
+        font-size: 250px;
+        z-index: -1;
+        animation-name: big-arrow;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        overflow: hidden;
+      }
+    }
+
+    @include maxw(1100px) {
+      width: 860px;
+      height: 680px;
+      top: 50px;
+
+      .ipad_content {
+        margin: 59px 245px 0;
+
+        .content-block .wrapper-for-lgt {
+          padding-bottom: 1px;
+        }
+      }
+    }
+
+    @include maxw(860px) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      height: auto;
+      background: none;
+
+      .ipad_content {
+        margin: 0;
+
+        .send-block form .wrap-button {
+          justify-content: center;
+        }
       }
     }
   }

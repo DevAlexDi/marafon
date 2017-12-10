@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style_all.css" rel="stylesheet">
+    <link href="css/style_all.css?v=1.2" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Марафон</title>
 
@@ -41,8 +41,8 @@
                     <p class="title">Как ежедневно получать 100% отдачу от каждого своего<br>действия и сделать 2018-й год персональным годом силы</p>
                     <p>Только работающие методики от почетного астролога России<br>и 2-х кратного победителя международного конкурса "Лучший хиромант" -<br><strong>Анатолия Шмульского</strong></p>
                     <div class="form">
-                    	<button>Регистрация через мессенджер</button>
-                        <button>Регистрация через email</button>
+                    	<a href="#soc_reg" class="button smooth">Регистрация через мессенджер</a>
+                        <a href="#soc_reg" class="button smooth">Регистрация через email</a>
                         <span class="about-form">12 000 учеников "Академии времени", благодаря этим знаниям, уже изменили свою жизнь к лучшему!</span>
                     </div>
                 </div>
@@ -171,6 +171,65 @@
             и абсолютная уверенность в себе и своих силах</p>
             <a href="#marafon_form" class="button smooth"><i></i> Изменить жизнь сейчас!</a>
         </div>
+    </section>
+    <section class="soc_reg" id="soc_reg">
+    	<div class="ipad">
+    		<div class="ipad_content">
+    			<div class="content-block">
+    				<div class="card-img">
+			            <img src="img/ipad_img.jpg" alt="">
+			        </div>
+			        <div class="wrapper-for-lgt">
+				         <div class="wrapper-input-phone wrapper-input-phone-lgt">
+				            <div class="flag-container">
+				                <div class="selected-flag">
+				                    <div id="current-flag" class="current-flag-country ru"></div>
+				                    <div class="iti-arrow"></div>
+				                </div>
+				                
+				            </div>
+				            <label for="input-phone">
+				                <div class="picked-code">+7</div>
+				            </label>
+				            <input type="tel" class="input-phone" placeholder="(201) 555-0123" name="phone" style="background:transparent;    color: #111;
+				    text-align: left;" id="input-phone">
+				        </div>
+				    </div>
+			        <div class="card-sub-title">
+			            Для бесплатного участия зарегистрируйтесь в один клик через мессенджер. Ссылка на трансляцию придет вам в SMS
+			        </div>
+    			</div>
+    			<div class="send-block multichannel">
+			        <div class="main-cta">
+			            <p>Выберите свой мессенджер или зарегистрируйтесь через email</p>
+			        </div> 
+
+			        <form method="post" action="thanks1.php" accept-charset="UTF-8" target="_noblank" id="vk-sub-gmun">
+			            <input type="hidden" name="phone-number" id="phone-number">
+			            <input type="hidden" name="button-messenger" id="button-messenger">
+			            <input type="hidden" name="url-vk" id="url-vk">
+			            <div class="wrap-button">
+			                <div id="gtm-sub-button-vk" class="button-social button-messenger" data-phone-number-entered="false" data-messenger="vk">
+			                    <img src="img/icon-soc-vk2.jpg" alt="">
+			                </div>
+
+			             <div id="gtm-sub-button-fb" class="button-social button-messenger" data-phone-number-entered="false" data-messenger="facebook">
+			                    <img src="img/icon-soc-message2.jpg" alt="">
+			                </div>
+
+			                <div id="gtm-sub-button-tg" class="button-social button-messenger" data-phone-number-entered="false" data-messenger="telegram">
+			                    <img src="img/icon-soc-telegram2.jpg" alt="">
+			                </div>
+			                
+			                <a id="gtm-sub-button-m" href="#email-popup" data-fancybox="" class="button-social">
+			                    <img src="img/icon-soc-mail2.jpg" alt="">
+			                </a>               
+			                
+			            </div>
+			        </form>
+			    </div>
+    		</div>
+    	</div>
     </section>
     <section class="whats-next" id="whats-next">
         <div class="wrap">

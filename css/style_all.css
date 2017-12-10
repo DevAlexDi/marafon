@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Roboto:100,300,400,500,700&subset=cyrillic");
 @font-face {
   font-family: 'metropolis_1920regular';
@@ -1545,23 +1546,23 @@ form {
         font-size: 13px;
         margin-top: 35px;
         display: block; }
-    .ticket-wrp .text button {
+    .ticket-wrp .text .button {
       padding: 0 10px;
       width: 48%;
       font-size: 13px; }
-      .ticket-wrp .text button:first-child {
+      .ticket-wrp .text .button:first-child {
         background-color: #624dd2;
         margin-right: 2%; }
       @media (max-width: 1100px) {
-        .ticket-wrp .text button {
+        .ticket-wrp .text .button {
           width: 70%;
           margin-right: 0;
           margin-bottom: 20px; } }
       @media (max-width: 800px) {
-        .ticket-wrp .text button {
+        .ticket-wrp .text .button {
           width: 100%; } }
       @media (max-width: 400px) {
-        .ticket-wrp .text button {
+        .ticket-wrp .text .button {
           font-size: 12px; } }
     .ticket-wrp .text p {
       font-size: 17px;
@@ -1867,10 +1868,10 @@ form {
     max-width: 100%; }
 
 .new_year {
-  background: url(../img/new_year_bg.jpg) no-repeat center top;
+  background: url(../img/new_year_bg.jpg?v=1.1) no-repeat center top;
   background-size: cover;
   color: white;
-  padding: 130px 0 108px;
+  padding: 130px 0 455px;
   text-align: center; }
   .new_year .title {
     font-size: 16px;
@@ -1890,6 +1891,9 @@ form {
         padding: 0 28px; }
         .new_year a i {
           margin-right: 5px; } }
+  @media (max-width: 1100px) {
+    .new_year {
+      padding-bottom: 355px; } }
   @media (max-width: 640px) {
     .new_year {
       padding: 70px 0; }
@@ -1897,8 +1901,8 @@ form {
         margin-top: 45px; } }
 
 .whats-next {
-  padding: 110px 0 250px;
-  background: url(../img/bonus1_bg.jpg) no-repeat left top; }
+  padding: 445px 0 250px;
+  background: url(../img/bonus1_bg.jpg?v=1.1) no-repeat left top; }
   .whats-next .wrap {
     position: relative; }
   .whats-next .bonus_top {
@@ -1953,8 +1957,7 @@ form {
     .whats-next {
       background-size: cover;
       background-position: left top;
-      padding-bottom: 260px;
-      padding-top: 150px; }
+      padding-bottom: 260px; }
       .whats-next .macbook {
         float: none;
         margin: 20px auto;
@@ -1967,6 +1970,9 @@ form {
           right: 0; }
       .whats-next .text-wrp p {
         white-space: normal; } }
+  @media (max-width: 1100px) {
+    .whats-next {
+      padding-top: 345px; } }
   @media (max-width: 860px) {
     .whats-next {
       padding-top: 45px; }
@@ -2384,5 +2390,221 @@ footer {
         margin-bottom: 30px; }
         footer .right a {
           margin: 0 10px; } }
+
+.soc_reg {
+  position: relative; }
+  .soc_reg .ipad {
+    position: absolute;
+    width: 1081px;
+    height: 855px;
+    background: url(../img/ipad.png) no-repeat center;
+    background-size: cover;
+    top: 65px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .soc_reg .ipad .ipad_content {
+      margin: 117px 330px 0; }
+      .soc_reg .ipad .ipad_content .content-block {
+        position: relative;
+        background: #fff;
+        -webkit-box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15);
+                box-shadow: 0 5px 20px -5px rgba(0, 0, 0, 0.15); }
+        .soc_reg .ipad .ipad_content .content-block .card-img img {
+          width: 100%; }
+        .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt {
+          padding: 12px; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .flag-container {
+            width: 46px;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .flag-container .current-flag {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .flag-container:hover {
+            cursor: pointer; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .selected-flag {
+            z-index: 1;
+            position: absolute;
+            width: 40px;
+            height: 100%;
+            padding: 11px 0 0 1px; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .wrapper-input-phone {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            border-bottom: 2px solid #c4c4c4;
+            padding: 5px 0 0 0;
+            height: 31px;
+            margin: 0 0 12px; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .wrapper-input-phone.focused {
+            outline: 0 !important;
+            border-bottom: 1px solid #4d90cc; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .wrapper-input-phone.valid-field {
+            border-bottom: 1px solid #81ea84; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .wrapper-input-phone.invalid-field {
+            border-bottom: 1px solid #e67171; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .wrapper-input-phone .divider {
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #ccc; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .iti-arrow {
+            margin: -8px 3px 0 0;
+            right: 0;
+            width: 0;
+            left: 0;
+            height: 0;
+            border-left: 3px solid transparent;
+            border-right: 3px solid transparent;
+            border-top: 4px solid #555;
+            float: right; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .country-list {
+            position: absolute;
+            z-index: 2;
+            list-style: none;
+            text-align: left;
+            padding: 0;
+            margin: 0 0 0 -1px;
+            -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+                    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            white-space: nowrap;
+            max-height: 200px;
+            overflow-y: scroll;
+            top: 30px;
+            width: 350px;
+            display: none; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .country-list .country {
+            padding: 5px 10px; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .country-list .country:hover {
+            background-color: rgba(0, 0, 0, 0.05); }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .country-list .country-name {
+            margin-right: 6px; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .country-list .dial-code {
+            color: #999; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .input-phone {
+            border: none !important;
+            background: 0 0;
+            width: 58% !important;
+            position: absolute;
+            right: 45px;
+            height: 30px !important;
+            top: 3px;
+            font-size: 20px; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .input-phone:focus {
+            outline: 0; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .hide {
+            display: none; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .picked-code {
+            width: 60px;
+            position: absolute;
+            top: 9px;
+            left: 35px;
+            font-family: "Open Sans";
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 18px;
+            text-align: center; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .country .flag-box {
+            float: left;
+            margin: 0 8px 0 0; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt #current-flag, .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt .iti-flag.ru {
+            top: 0;
+            bottom: 0;
+            width: 20px;
+            height: 14px;
+            -webkit-box-shadow: 0 0 1px 0 #888;
+                    box-shadow: 0 0 1px 0 #888;
+            background-image: url(../img/flag_ru.png);
+            background-repeat: no-repeat;
+            background-color: #dbdbdb; }
+        .soc_reg .ipad .ipad_content .content-block .card-sub-title {
+          padding: 0 20px 10px;
+          -webkit-transition: all .1s;
+          transition: all .1s;
+          font-size: 12px;
+          word-wrap: break-word;
+          font-weight: bold;
+          text-align: center; }
+      .soc_reg .ipad .ipad_content .send-block {
+        position: relative;
+        font-size: 11px;
+        text-align: center;
+        -webkit-transition: all .1s;
+        transition: all .1s;
+        z-index: 1; }
+        .soc_reg .ipad .ipad_content .send-block .main-cta {
+          text-align: center;
+          font-size: 16px;
+          padding: 20px 5px 5px;
+          font-weight: 300;
+          word-break: break-word;
+          display: block; }
+          .soc_reg .ipad .ipad_content .send-block .main-cta p {
+            margin: 0; }
+        .soc_reg .ipad .ipad_content .send-block form {
+          padding-top: 15px; }
+          .soc_reg .ipad .ipad_content .send-block form .wrap-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-left: 0;
+            margin-right: 0; }
+            .soc_reg .ipad .ipad_content .send-block form .wrap-button div, .soc_reg .ipad .ipad_content .send-block form .wrap-button a {
+              cursor: pointer; }
+              .soc_reg .ipad .ipad_content .send-block form .wrap-button div img, .soc_reg .ipad .ipad_content .send-block form .wrap-button a img {
+                width: 100%; }
+      .soc_reg .ipad .ipad_content .multichannel::after, .soc_reg .ipad .ipad_content .multichannel::before {
+        content: "▾";
+        position: absolute;
+        opacity: 0;
+        color: rgba(46, 86, 174, 0.2);
+        line-height: 10px;
+        top: 0px;
+        left: 50%;
+        margin-left: -150px;
+        width: 300px;
+        height: 100px;
+        font-size: 250px;
+        z-index: -1;
+        -webkit-animation-name: big-arrow;
+                animation-name: big-arrow;
+        -webkit-animation-duration: 3s;
+                animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+        overflow: hidden; }
+    @media (max-width: 1100px) {
+      .soc_reg .ipad {
+        width: 860px;
+        height: 680px;
+        top: 50px; }
+        .soc_reg .ipad .ipad_content {
+          margin: 59px 245px 0; }
+          .soc_reg .ipad .ipad_content .content-block .wrapper-for-lgt {
+            padding-bottom: 1px; } }
+    @media (max-width: 860px) {
+      .soc_reg .ipad {
+        position: relative;
+        top: 0;
+        left: 0;
+        -webkit-transform: none;
+                transform: none;
+        width: 100%;
+        height: auto;
+        background: none; }
+        .soc_reg .ipad .ipad_content {
+          margin: 0; }
+          .soc_reg .ipad .ipad_content .send-block form .wrap-button {
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; } }
 
 /*# sourceMappingURL=style_all.css.map */
