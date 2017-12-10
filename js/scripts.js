@@ -52,6 +52,14 @@ $(document).ready(function() {
         $(this).next('.hide').slideDown();
     });
 
+    $('.mail-check-wrp .item').click(function(){
+        $('.mail-check-wrp .item').removeClass('active');
+        $('.mail-check-wrp .right img').hide();
+        var i = $(this).attr('data-num');
+        $(this).addClass('active');
+        $(this).closest('.mail-check-wrp').find('.right img.i' + i).show();
+    });
+
     $('.howto .slider').each(function(){
         var slider = $(this);
         var prev = $(this).siblings('.slider-prev');

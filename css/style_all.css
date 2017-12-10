@@ -40,7 +40,7 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
-.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm div.button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
+.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .help .check-mail .mail-check-wrp .important:before, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .help header:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm div.button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
   background-image: url("../img/sprite-s43daf6fcb9.png");
   background-repeat: no-repeat; }
 
@@ -94,7 +94,7 @@
   height: 138px;
   width: 138px; }
 
-.sprite-ico-important {
+.sprite-ico-important, .help .check-mail .mail-check-wrp .important:before {
   background-position: 0 -378px;
   height: 28px;
   width: 28px; }
@@ -109,7 +109,7 @@
   height: 19px;
   width: 25px; }
 
-.sprite-ico-mouse, .start:after {
+.sprite-ico-mouse, .start:after, .help header:after {
   background-position: 0 -441px;
   height: 26px;
   width: 17px; }
@@ -2606,5 +2606,408 @@ footer {
             -webkit-box-pack: center;
                 -ms-flex-pack: center;
                     justify-content: center; } }
+
+.help header {
+  background-position: center top -35px;
+  padding-bottom: 40px; }
+  .help header:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(30%, #5e6163));
+    background: linear-gradient(to bottom, transparent 0%, #5e6163 30%);
+    border-radius: 100%;
+    left: 50%;
+    margin-left: -30px;
+    bottom: -30px; }
+  .help header:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8.5px;
+    bottom: -13px; }
+  .help header .ticket-wrp {
+    padding-top: 10px; }
+    @media (min-width: 1201px) {
+      .help header .ticket-wrp img {
+        top: 30px;
+        left: 170px;
+        width: 390px; }
+      .help header .ticket-wrp .text {
+        max-width: 620px; } }
+    .help header .ticket-wrp .text h2 {
+      font-size: 60px;
+      line-height: 70px;
+      text-align: left;
+      margin-bottom: 40px; }
+      @media (max-width: 1200px) {
+        .help header .ticket-wrp .text h2 {
+          font-size: 40px;
+          line-height: 50px; } }
+    .help header .ticket-wrp .text .title {
+      text-align: left;
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 33px;
+      text-transform: none;
+      white-space: pre-line; }
+      @media (max-width: 1200px) {
+        .help header .ticket-wrp .text .title {
+          font-size: 16px;
+          line-height: 24px; } }
+    .help header .ticket-wrp .text p {
+      font-size: 23px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      white-space: pre-line;
+      margin: 30px 0; }
+      @media (max-width: 1200px) {
+        .help header .ticket-wrp .text p {
+          font-size: 14px;
+          line-height: 20px; } }
+      @media (max-width: 640px) {
+        .help header .ticket-wrp .text p {
+          text-align: center; } }
+  @media (max-width: 1200px) {
+    .help header {
+      padding: 20px 0;
+      background-position: right top; }
+      .help header:before, .help header:after {
+        display: none; }
+      .help header .wrap {
+        margin-top: 0; } }
+.help .check-mail {
+  padding: 110px 0 0;
+  position: relative;
+  background: url(../img/help_bottom_bg.jpg) no-repeat center top 353px; }
+  .help .check-mail:before {
+    content: '';
+    width: 100%;
+    height: 32px;
+    display: block;
+    top: -32px;
+    left: 0;
+    position: absolute;
+    background: url(../img/white_bg.png) no-repeat center; }
+  @media (max-width: 1200px) {
+    .help .check-mail {
+      padding-top: 70px;
+      background-position: center top 200px; } }
+  @media (max-width: 980px) {
+    .help .check-mail {
+      background-position: center top 1100px; } }
+  .help .check-mail .triggers {
+    margin-bottom: 75px; }
+    .help .check-mail .triggers .item {
+      background: #fff;
+      -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 44px 15px 50px;
+      height: 420px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      line-height: 25px; }
+      @media (max-width: 980px) {
+        .help .check-mail .triggers .item {
+          width: 100%;
+          margin: 0 auto 30px;
+          clear: both;
+          float: none;
+          height: auto;
+          padding: 30px 15px 20px; } }
+      .help .check-mail .triggers .item .img {
+        width: 100%;
+        height: 168px; }
+        .help .check-mail .triggers .item .img img {
+          display: block;
+          margin: auto;
+          max-width: 100%; }
+        .help .check-mail .triggers .item .img.macbook {
+          background: url(../img/macbook-mockup.jpg) no-repeat center bottom;
+          position: relative; }
+          .help .check-mail .triggers .item .img.macbook img {
+            display: block;
+            width: 214px;
+            position: absolute;
+            left: 50%;
+            margin-left: -107px;
+            top: 10px; }
+          .help .check-mail .triggers .item .img.macbook span {
+            width: 56px;
+            height: 41px;
+            display: block;
+            background: #3a24ab;
+            border-radius: 56px;
+            color: white;
+            font-weight: bold;
+            font-size: 30px;
+            padding-top: 15px;
+            text-align: center;
+            position: absolute;
+            right: 32px;
+            bottom: 20px; }
+      .help .check-mail .triggers .item .title {
+        color: #141414;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5em;
+        margin-top: 15px;
+        margin-bottom: 25px; }
+      .help .check-mail .triggers .item p {
+        color: #646464;
+        font-size: 17px;
+        font-weight: 300;
+        margin: 0 0 15px; }
+  .help .check-mail .title {
+    color: #fff;
+    letter-spacing: 0.5em; }
+  .help .check-mail h2 {
+    color: #fff;
+    font-size: 60px; }
+    @media (max-width: 860px) {
+      .help .check-mail h2 {
+        font-size: 40px;
+        line-height: 50px; } }
+  .help .check-mail .mail-check-wrp {
+    margin-top: 70px; }
+    .help .check-mail .mail-check-wrp .left {
+      width: 585px; }
+      .help .check-mail .mail-check-wrp .left p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        margin: 0 0 30px; }
+      .help .check-mail .mail-check-wrp .left .item {
+        display: inline-block;
+        cursor: pointer;
+        width: 260px;
+        height: 190px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-right: 27px;
+        margin-bottom: 30px;
+        background: #fff;
+        border: 3px solid #fff;
+        -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all linear 0.2s;
+        transition: all linear 0.2s; }
+        .help .check-mail .mail-check-wrp .left .item.active {
+          border-color: #3a24ab; }
+        .help .check-mail .mail-check-wrp .left .item.i1 {
+          background: #fff url(../img/mail-yandex.png) no-repeat center; }
+        .help .check-mail .mail-check-wrp .left .item.i2 {
+          background: #fff url(../img/mail-mailru.png) no-repeat center; }
+        .help .check-mail .mail-check-wrp .left .item.i3 {
+          background: #fff url(../img/mail-gmail.png) no-repeat center; }
+        .help .check-mail .mail-check-wrp .left .item.i4 {
+          background: #fff url(../img/mail-rambler.png) no-repeat center; }
+    .help .check-mail .mail-check-wrp .right {
+      width: 550px;
+      height: 500px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 2px dotted #fff;
+      position: relative;
+      border-radius: 3px; }
+      .help .check-mail .mail-check-wrp .right img {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        width: auto;
+        max-width: 80%;
+        margin-top: 15px;
+        display: none; }
+    .help .check-mail .mail-check-wrp .important {
+      margin-top: 65px;
+      margin-left: 35px;
+      font-size: 22px;
+      color: #646464;
+      font-weight: 300;
+      line-height: 27px;
+      padding-left: 40px;
+      position: relative; }
+      .help .check-mail .mail-check-wrp .important:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -2px; }
+      .help .check-mail .mail-check-wrp .important b {
+        color: #141414;
+        font-weight: 500;
+        line-height: 25px; }
+    @media (max-width: 1200px) {
+      .help .check-mail .mail-check-wrp .left {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px; }
+        .help .check-mail .mail-check-wrp .left .item {
+          width: 23%;
+          height: 140px;
+          margin-right: 1%;
+          background-size: 80% !important; }
+      .help .check-mail .mail-check-wrp .right {
+        width: 100%;
+        float: none;
+        clear: both; } }
+    @media (max-width: 640px) {
+      .help .check-mail .mail-check-wrp .left .item {
+        width: 48%; }
+      .help .check-mail .mail-check-wrp .right {
+        height: auto;
+        text-align: center; }
+        .help .check-mail .mail-check-wrp .right img {
+          position: static;
+          width: 100%;
+          position: static;
+          top: 0;
+          left: 0;
+          -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+          margin: 20px auto;
+          max-width: 90%; }
+      .help .check-mail .mail-check-wrp .important {
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 24px; } }
+.help footer {
+  margin-top: 100px; }
+
+.help .header {
+  background-image: url(../img/header_bg.jpg);
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 40px 0 30px;
+  position: relative; }
+  @media (max-width: 1400px) {
+    .help .header {
+      padding-bottom: 70px; } }
+  .help .header .clearfix, .help .header .w3, .help .header .w4, .help .header .know-more, .help .header .programm .day .top, .programm .day .help .header .top, .help .header footer {
+    clear: both; }
+  .help .header .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    overflow: visible;
+    min-width: 290px; }
+    @media (min-width: 768px) {
+      .help .header .container {
+        width: 750px;
+        max-width: 750px; } }
+    @media (min-width: 1401px) {
+      .help .header .container {
+        width: 1366px;
+        max-width: 1366px; } }
+    @media (max-width: 1400px) {
+      .help .header .container {
+        width: 1170px;
+        max-width: 1170px; } }
+    @media (max-width: 1160px) {
+      .help .header .container {
+        width: 750px;
+        max-width: 750px; } }
+    @media (max-width: 767px) {
+      .help .header .container {
+        width: 95%;
+        max-width: 95%;
+        padding-left: 0; } }
+  .help .header .row {
+    margin-right: -15px;
+    margin-left: -15px; }
+  .help .header .col-lg-1, .help .header .col-lg-10, .help .header .col-lg-11, .help .header .col-lg-12, .help .header .col-lg-2, .help .header .col-lg-3, .help .header .col-lg-4, .help .header .col-lg-5, .help .header .col-lg-6, .help .header .col-lg-7, .help .header .col-lg-8, .help .header .col-lg-9, .help .header .col-md-1, .help .header .col-md-10, .help .header .col-md-11, .help .header .col-md-12, .help .header .col-md-2, .help .header .col-md-3, .help .header .col-md-4, .help .header .col-md-5, .help .header .col-md-6, .help .header .col-md-7, .help .header .col-md-8, .help .header .col-md-9, .help .header .col-sm-1, .help .header .col-sm-10, .help .header .col-sm-11, .help .header .col-sm-12, .help .header .col-sm-2, .help .header .col-sm-3, .help .header .col-sm-4, .help .header .col-sm-5, .help .header .col-sm-6, .help .header .col-sm-7, .help .header .col-sm-8, .help .header .col-sm-9, .help .header .col-xs-1, .help .header .col-xs-10, .help .header .col-xs-11, .help .header .col-xs-12, .help .header .col-xs-2, .help .header .col-xs-3, .help .header .col-xs-4, .help .header .col-xs-5, .help .header .col-xs-6, .help .header .col-xs-7, .help .header .col-xs-8, .help .header .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    /*padding-right: 15px;
+    padding-left: 15px;*/ }
+  .help .header .col-xs-1, .help .header .col-xs-10, .help .header .col-xs-11, .help .header .col-xs-12, .help .header .col-xs-2, .help .header .col-xs-3, .help .header .col-xs-4, .help .header .col-xs-5, .help .header .col-xs-6, .help .header .col-xs-7, .help .header .col-xs-8, .help .header .col-xs-9 {
+    float: left; }
+  .help .header .col-xs-12 {
+    width: 100%; }
+  .help .header .visible-md, .help .header .visible-lg {
+    display: none !important; }
+  @media (min-width: 768px) {
+    .help .header .col-sm-4, .help .header .col-sm-7, .help .header .col-md-5, .help .header .col-md-7, .help .header .col-lg-5, .help .header .col-lg-7 {
+      float: left; }
+    .help .header .col-sm-4 {
+      width: 33.33333333333333%; }
+    .help .header .col-sm-7 {
+      width: 58.33333333%; }
+    .help .header .col-sm-offset-1 {
+      margin-left: 8.333333333333332%; } }
+  @media (min-width: 992px) {
+    .help .header .col-md-4 {
+      width: 33.33333333333333%; }
+    .help .header .col-md-7 {
+      width: 58.33333333%; } }
+  @media (min-width: 1200px) {
+    .help .header .col-md-4 {
+      width: 33.33333333333333%; }
+    .help .header .col-md-7 {
+      width: 58.33333333%; }
+    .help .header .visible-lg {
+      display: block !important; } }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .help .header .visible-md {
+      display: block !important; } }
+  .help .header p {
+    margin: 10px 0 10px 30px;
+    padding: 0; }
+    .help .header p.reference {
+      color: #929c9c;
+      font-size: 16px;
+      font-weight: 300; }
+  .help .header .bb {
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 700;
+    margin-bottom: 20px; }
+  .help .header .metropolisText {
+    margin-bottom: 45px;
+    margin-top: 30px;
+    font-family: "metropolis_1920regular";
+    font-size: 75px;
+    line-height: 75px; }
+    @media (max-width: 768px) {
+      .help .header .metropolisText {
+        font-size: 50px; } }
+  .help .header .book {
+    position: relative; }
+    .help .header .book img.help_book {
+      position: absolute;
+      right: -200px;
+      top: -10px;
+      width: 550px;
+      z-index: 1; }
+  .help .header .tickets {
+    position: absolute;
+    bottom: -130px;
+    right: 168px;
+    z-index: 1; }
+    .help .header .tickets img {
+      position: relative;
+      top: 0;
+      right: 0; }
+  .help .header .arrowHelp {
+    bottom: -150px;
+    left: -80px;
+    position: absolute;
+    z-index: 1; }
 
 /*# sourceMappingURL=style_all.css.map */
