@@ -3023,4 +3023,34 @@ footer {
     position: absolute;
     z-index: 1; }
 
+.video p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px; }
+.video header {
+  background-image: url(../img/video_bg.jpg);
+  padding-bottom: 300px; }
+  .video header .wrap {
+    margin-top: 25px; }
+  @media (max-width: 1100px) {
+    .video header {
+      padding-bottom: 260px; } }
+  @media (max-width: 860px) {
+    .video header {
+      padding-bottom: 210px; } }
+  @media (max-width: 600px) {
+    .video header {
+      padding-bottom: 140px; } }
+  @media (max-width: 400px) {
+    .video header {
+      padding-bottom: 95px; } }
+.video .video_wrap .video_iframe {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+.video .video_wrap img {
+  width: 100%; }
+@media (max-width: 860px) {
+  .video header nav {
+    margin-top: 15px; } }
+
 /*# sourceMappingURL=style_all.css.map */
