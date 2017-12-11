@@ -3064,7 +3064,7 @@ footer {
           width: 1170px; } }
     @media (max-width: 1200px) {
       .thank header {
-        padding: 20px 0; }
+        padding: 20px 0 90px; }
         .thank header .wrap {
           margin-top: 0;
           width: 96%; } }
@@ -3132,7 +3132,9 @@ footer {
             margin: 0 auto 20px; } }
   .thank .bonus_link_wrap {
     position: relative;
-    margin-top: -48px; }
+    margin-top: -32px;
+    padding-top: 120px;
+    z-index: 10; }
     .thank .bonus_link_wrap:before {
       content: '';
       width: 100%;
@@ -3155,21 +3157,62 @@ footer {
       width: 17px;
       background-image: url(../img/sprite-s43daf6fcb9.png);
       background-repeat: no-repeat; }
+    .thank .bonus_link_wrap .abs {
+      width: 100%;
+      background: #fff;
+      -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      position: relative; }
+      .thank .bonus_link_wrap .abs:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -53px;
+        top: -48px;
+        background-position: 0 -238px;
+        height: 138px;
+        width: 138px;
+        background-image: url(../img/sprite-s43daf6fcb9.png);
+        background-repeat: no-repeat; }
+      .thank .bonus_link_wrap .abs .cont {
+        padding: 40px 0 70px;
+        background: url(../img/book4.png) no-repeat left 40px center; }
+        .thank .bonus_link_wrap .abs .cont p {
+          font-size: 20px;
+          text-align: center;
+          white-space: pre-line;
+          line-height: 30px; }
+          .thank .bonus_link_wrap .abs .cont p.grey {
+            font-size: 18px;
+            color: #646464; }
+            .thank .bonus_link_wrap .abs .cont p.grey a {
+              color: #d53257;
+              text-decoration: underline; }
+              .thank .bonus_link_wrap .abs .cont p.grey a:hover {
+                text-decoration: none; }
+    @media (max-width: 1200px) {
+      .thank .bonus_link_wrap .abs {
+        width: 85%;
+        margin: auto; }
+        .thank .bonus_link_wrap .abs .cont {
+          background: none; } }
   .thank footer {
     margin-top: 35px; }
   .thank .shmulskiy {
     background-image: url(../img/thank.jpg);
     padding-bottom: 60px;
-    padding-top: 30px;
-    margin-top: 0; }
+    padding-top: 220px;
+    margin-top: -175px; }
     .thank .shmulskiy .wrap {
       max-width: 1366px; }
       .thank .shmulskiy .wrap .text {
         max-width: 710px; }
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
+      .thank .shmulskiy .wrap {
+        padding-bottom: 0; } }
+    @media (max-width: 640px) {
       .thank .shmulskiy {
-        margin-top: 0;
-        psdding-top: 45px; } }
+        background-size: cover; } }
     .thank .shmulskiy h2 {
       line-height: 75px; }
     .thank .shmulskiy .text p {

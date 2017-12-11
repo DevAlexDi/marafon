@@ -2116,7 +2116,7 @@ footer {
       }
     }
     @include maxw(1200px) {
-      padding: 20px 0;
+      padding: 20px 0 90px;
       .wrap {
         margin-top: 0;
         width: 96%;
@@ -2206,7 +2206,9 @@ footer {
   }
   .bonus_link_wrap {
     position: relative;
-    margin-top: -48px;
+    margin-top: -32px;
+    padding-top: 120px;
+    z-index: 10;
 
     &:before {
       content: '';
@@ -2232,6 +2234,63 @@ footer {
       background-image: url(../img/sprite-s43daf6fcb9.png);
       background-repeat: no-repeat;
     }
+
+    .abs {
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      position: relative;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -53px;
+        top: -48px;
+        background-position: 0 -238px;
+        height: 138px;
+        width: 138px;
+        background-image: url(../img/sprite-s43daf6fcb9.png);
+        background-repeat: no-repeat;
+      }
+
+      .cont {
+        padding: 40px 0 70px;
+        background: url(../img/book4.png) no-repeat left 40px center;
+
+        p {
+          font-size: 20px;
+          text-align: center;
+          white-space: pre-line;
+          line-height: 30px;
+
+          &.grey {
+            font-size: 18px;
+            color: #646464;
+
+            a {
+              color: #d53257;
+              text-decoration: underline;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include maxw(1200px) {
+      .abs {
+        width: 85%;
+        margin: auto;
+
+        .cont {
+          background: none;
+        }
+      }
+    }
   }
   footer {
     margin-top: 35px;
@@ -2240,8 +2299,8 @@ footer {
   .shmulskiy {
     background-image: url(../img/thank.jpg);
     padding-bottom: 60px;
-    padding-top: 30px;
-    margin-top: 0;
+    padding-top: 220px;
+    margin-top: -175px;
 
     .wrap {
       max-width: 1366px;
@@ -2251,9 +2310,14 @@ footer {
       }
     }
 
-    @include maxw(767px) {
-      margin-top: 0;
-      psdding-top: 45px;
+    @include maxw(1199px) {
+      .wrap {
+        padding-bottom: 0;
+      }
+    }
+
+    @include maxw(640px) {
+      background-size: cover;
     }
 
     h2 {
