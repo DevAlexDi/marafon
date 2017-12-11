@@ -5,7 +5,10 @@ $(document).ready(function() {
     $('a.smooth').click(function () {
         var id = $(this).attr('href');
         var pos = ($(id).position().top);
-        $('html, body').animate({scrollTop: pos}, 1000);
+        if (id == '#soc_reg' && $(window).width() > 860) {
+        	pos -= 300;
+    	}
+    	$('html, body').animate({scrollTop: pos}, 1000);
         return false;
     });
 

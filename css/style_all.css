@@ -40,26 +40,26 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1; } }
-.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:hover:before, .sprite-arrow-left, .howto .slider-prev a:before, .sprite-arrow-right-white, .howto .slider-next a:hover:before, .sprite-arrow-right, .howto .slider-next a:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .thank .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .help .check-mail .mail-check-wrp .important:before, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .help header:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .thank .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm div.button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
-  background-image: url("../img/sprite-s43daf6fcb9.png");
+.sprite-sprite, .sprite-arrow-left-white, .howto .slider-prev a:before, .sprite-arrow-left, .howto .slider-prev a:hover:before, .sprite-arrow-right-white, .howto .slider-next a:before, .sprite-arrow-right, .howto .slider-next a:hover:before, .sprite-ico-after-smile, .sprite-ico-before-smile, .sprite-ico-calendar, .button i.cal, button i.cal, input[type="submit"] i.cal, .sprite-ico-check, .button i, button i, input[type="submit"] i, .sprite-ico-date, .programm .day .top .timing span.date:before, .thank .day .top .timing span.date:before, .sprite-ico-free, .whats-next .macbook.free:after, .sprite-ico-important, .help .check-mail .mail-check-wrp .important:before, .sprite-ico-list-item, ul li:before, .sprite-ico-mailbox, .button i.mail, button i.mail, input[type="submit"] i.mail, .sprite-ico-mouse, .start:after, .help header:after, .sprite-ico-mouse2, .start.start-bg-stile.shmulskiy-2:after, .sprite-ico-question, .sprite-ico-time, .programm .day .top .timing span.time:before, .thank .day .top .timing span.time:before, .sprite-rol, .button i.rol, button i.rol, input[type="submit"] i.rol, .programm div.button i, .sprite-trigger1, .sprite-trigger10, .sprite-trigger11, .sprite-trigger12, .sprite-trigger13, .sprite-trigger14, .sprite-trigger2, .sprite-trigger3, .sprite-trigger4, .sprite-trigger5, .sprite-trigger6, .sprite-trigger7, .sprite-trigger8, .sprite-trigger9 {
+  background-image: url("../img/sprite-s43daf6fcb9.png?v=1.1");
   background-repeat: no-repeat; }
 
-.sprite-arrow-left-white, .howto .slider-prev a:hover:before {
+.sprite-arrow-left-white, .howto .slider-prev a:before {
   background-position: 0 0;
   height: 20px;
   width: 12px; }
 
-.sprite-arrow-left, .howto .slider-prev a:before {
+.sprite-arrow-left, .howto .slider-prev a:hover:before {
   background-position: 0 -22px;
   height: 20px;
   width: 12px; }
 
-.sprite-arrow-right-white, .howto .slider-next a:hover:before {
+.sprite-arrow-right-white, .howto .slider-next a:before {
   background-position: 0 -44px;
   height: 20px;
   width: 12px; }
 
-.sprite-arrow-right, .howto .slider-next a:before {
+.sprite-arrow-right, .howto .slider-next a:hover:before {
   background-position: 0 -66px;
   height: 20px;
   width: 12px; }
@@ -855,18 +855,18 @@ form {
         border-radius: 100%;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        background: #fff;
+        background: #3a24ab;
         padding: 0;
         -webkit-transition: none;
         transition: none; }
         .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow:hover {
-          background: #3a24ab; }
+          background: #fff; }
           .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow:hover.slick-next:before {
-            background-position: 0 -44px;
+            background-position: 0 -66px;
             height: 20px;
             width: 12px; }
           .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow:hover.slick-prev:before {
-            background-position: 0 0;
+            background-position: 0 -22px;
             height: 20px;
             width: 12px; }
         .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow:before {
@@ -885,14 +885,14 @@ form {
           -webkit-transform: translateX(10px);
                   transform: translateX(10px); }
           .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow.slick-next:before {
-            background-position: 0 -66px;
+            background-position: 0 -44px;
             height: 20px;
             width: 12px; }
         .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow.slick-prev {
           -webkit-transform: translateX(-85px);
                   transform: translateX(-85px); }
           .new-slider-coments-wr .for-slider-wr-new .new-slider-init .slick-arrow.slick-prev:before {
-            background-position: 0 -22px;
+            background-position: 0 0;
             height: 20px;
             width: 12px; }
 
@@ -966,7 +966,7 @@ form {
       .howto .slider .item .left .number {
         position: absolute;
         top: 40px;
-        left: 40px;
+        right: 40px;
         color: rgba(255, 255, 255, 0.3);
         font-family: "Roboto Condensed", sans-serif;
         font-size: 70px;
@@ -1058,6 +1058,7 @@ form {
       text-indent: -9999px;
       border: 2px solid #3a24ab;
       border-radius: 100%;
+      background: #3a24ab;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
       .howto .slider-prev a:before,
@@ -1071,22 +1072,32 @@ form {
         transform: translate3d(-50%, -50%, 0); }
       .howto .slider-prev a:hover,
       .howto .slider-next a:hover {
-        background: #3a24ab; }
+        background: white; }
       @media (max-width: 1200px) {
         .howto .slider-prev a,
         .howto .slider-next a {
           -webkit-transform: scale(0.5, 0.5);
           transform: scale(0.5, 0.5); } }
   .howto .slider-prev {
-    right: 130px; }
+    right: 50%;
+    margin-right: -100px; }
     @media (max-width: 1200px) {
       .howto .slider-prev {
-        right: 40px; } }
+        margin-right: -80px; } }
+    @media (max-width: 860px) {
+      .howto .slider-prev {
+        margin-right: 40px; } }
   .howto .slider-next {
-    right: 40px; }
+    right: 50%;
+    margin-right: -200px; }
     @media (max-width: 1200px) {
       .howto .slider-next {
-        right: 0px; } }
+        margin-right: -160px; } }
+    @media (max-width: 860px) {
+      .howto .slider-next {
+        margin-left: 40px;
+        right: auto;
+        left: 50%; } }
 
 .howto .slider .item .right .text p strong {
   color: #000; }
@@ -1548,19 +1559,20 @@ form {
         display: block; }
     .ticket-wrp .text .button {
       padding: 0 10px;
-      width: 48%;
+      width: 42%;
       font-size: 13px; }
       .ticket-wrp .text .button:first-child {
         background-color: #624dd2;
-        margin-right: 2%; }
+        margin-right: 2%;
+        width: 55%; }
       @media (max-width: 1100px) {
         .ticket-wrp .text .button {
-          width: 70%;
-          margin-right: 0;
+          width: 70% !important;
+          margin-right: 0 !important;
           margin-bottom: 20px; } }
       @media (max-width: 800px) {
         .ticket-wrp .text .button {
-          width: 100%; } }
+          width: 100% !important; } }
       @media (max-width: 400px) {
         .ticket-wrp .text .button {
           font-size: 12px; } }
@@ -1844,9 +1856,9 @@ form {
         bottom: 20px; }
     .programm .day .text {
       padding: 16px 0 25px 275px;
-      color: #b9babb;
+      color: white;
       font-size: 16px;
-      font-weight: 100;
+      font-weight: 300;
       line-height: 26px; }
       @media (max-width: 1200px) {
         .programm .day .text {
@@ -3519,7 +3531,7 @@ footer {
         bottom: 20px; }
     .thank .day .text {
       padding: 16px 0 25px 275px;
-      color: #b9babb;
+      color: black;
       font-size: 16px;
       font-weight: 100;
       line-height: 26px; }

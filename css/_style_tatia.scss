@@ -206,22 +206,23 @@ $rose_color: #d53257;
 
     .button {
       padding: 0 10px;
-      width: 48%;
+      width: 42%;
       font-size: 13px;
 
       &:first-child {
         background-color: #624dd2;
         margin-right: 2%;
+        width: 55%;
       }
 
       @include maxw(1100px) {
-        width: 70%;
-        margin-right: 0;
+        width: 70%!important;
+        margin-right: 0!important;
         margin-bottom: 20px;
       }
 
       @include maxw(800px) {
-        width: 100%;
+        width: 100%!important;
       }
 
       @include maxw(400px) {
@@ -568,9 +569,9 @@ $rose_color: #d53257;
     }
     .text {
       padding: 16px 0 25px 275px;
-      color: #b9babb;
+      color: white;
       font-size: 16px;
-      font-weight: 100;
+      font-weight: 300;
       line-height: 26px;
       @include maxw(1200px) {
         padding-left: 0;
@@ -2840,7 +2841,7 @@ footer {
     }
     .text {
       padding: 16px 0 25px 275px;
-      color: #b9babb;
+      color: black;
       font-size: 16px;
       font-weight: 100;
       line-height: 26px;

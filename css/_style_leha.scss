@@ -50,23 +50,23 @@
                 border: 2px solid #3a24ab;
                 border-radius: 100%;
                 -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-               background: #fff;
+                box-sizing: border-box;               
+               background: #3a24ab;
                 padding: 0;
                 transition: none;
                 &:hover{
-                    background: #3a24ab;
+                    background: #fff;
                     &.slick-next{
                          &:before{
                             
-                             background-position: 0 -44px;
+                             background-position: 0 -66px;
                             height: 20px;
                             width: 12px;
                         }
                     }
                     &.slick-prev{
                          &:before{
-                            background-position: 0 0;
+                            background-position: 0 -22px;
                             height: 20px;
                             width: 12px;
                         }
@@ -89,7 +89,7 @@
                 &.slick-next{
                     transform: translateX(10px);
                     &:before{
-                        background-position: 0 -66px;
+                        background-position: 0 -44px;
                         height: 20px;
                         width: 12px;
                     }
@@ -98,7 +98,7 @@
                     transform: translateX(-85px);
                      &:before{
                        
-                          background-position: 0 -22px;
+                          background-position: 0 0;
                         height: 20px;
                         width: 12px;
                     }
@@ -196,7 +196,7 @@
 				.number {
 					position: absolute;
 					top: 40px;
-					left: 40px;
+					right: 40px;
 					color: rgba(255,255,255,0.3);
 					font-family: $font3;
 					font-size: 70px;
@@ -294,6 +294,7 @@
 			text-indent: -9999px;
 			border: 2px solid $blue;
 			border-radius: 100%;
+			background: $blue;
 			@include box-sizing(border-box);
 			&:before {
 				content: '';
@@ -304,7 +305,7 @@
 				@include translate3d(-50%, -50%, 0);
 			}
 			&:hover {
-				background: $blue;
+				background: white;
 			}
 			@include maxw(1200px) {
 				@include scale(0.5,0.5);
@@ -312,30 +313,40 @@
 		}
 	}
 	.slider-prev {
-		right: 130px;
+		right: 50%;
+		margin-right: -100px;
 		@include maxw(1200px) {
-			right: 40px;
+			margin-right: -80px;
+		}
+		@include maxw(860px) {
+			margin-right: 40px;
 		}
 		a {
 			&:before {
-				@extend .sprite-arrow-left;
+				@extend .sprite-arrow-left-white;
 			}
 			&:hover:before {
-				@extend .sprite-arrow-left-white;
+				@extend .sprite-arrow-left;
 			}
 		}
 	}
 	.slider-next {
-		right: 40px;
+		right: 50%;
+		margin-right: -200px;
 		@include maxw(1200px) {
-			right: 0px;
+			margin-right: -160px;
+		}
+		@include maxw(860px) {
+			margin-left: 40px;
+			right: auto;
+			left: 50%;
 		}
 		a {
 			&:before {
-				@extend .sprite-arrow-right;
+				@extend .sprite-arrow-right-white;
 			}
 			&:hover:before {
-				@extend .sprite-arrow-right-white;
+				@extend .sprite-arrow-right;
 			}
 		}
 	}
