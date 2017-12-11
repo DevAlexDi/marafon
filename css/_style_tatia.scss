@@ -2124,6 +2124,11 @@ footer {
     }
     .ticket-wrp {
       padding-top: 10px;
+
+      img {
+        z-index: 100;
+      }
+
       @include minw(1201px) {
         img {
           top: 30px;

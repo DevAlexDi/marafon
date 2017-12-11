@@ -3070,6 +3070,8 @@ footer {
           width: 96%; } }
     .thank header .ticket-wrp {
       padding-top: 10px; }
+      .thank header .ticket-wrp img {
+        z-index: 100; }
       @media (min-width: 1201px) {
         .thank header .ticket-wrp img {
           top: 30px;
