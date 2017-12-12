@@ -137,6 +137,7 @@
         }
         &:after{
             bottom: 19px;
+            @extend .sprite-ico-mouse2; 
         }
     }
 } 
@@ -364,7 +365,7 @@
         background-image: url(../img/shmulskiy-2-bg.jpg);
             margin-top: -206px;
         &:after { 
-            @extend .sprite-ico-mouse2; 
+            @extend .sprite-ico-mouse; 
         }
         .for-align{
             text-align: center;

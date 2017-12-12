@@ -3,9 +3,9 @@ $(document).ready(function() {
     // СКРОЛЛ ПО ССЫЛКАМ НА ЯКОРЬ
 
     $('a.smooth').click(function () {
-        var id = $(this).attr('href');
-        var pos = ($(id).position().top);
-        if (id == '#soc_reg' && $(window).width() > 860) {
+      var id = $(this).attr('href');
+      var pos = ($(id).position().top);
+      if (id == '#soc_reg' && $(window).width() > 860) {
         	pos -= 300;
     	}
     	$('html, body').animate({scrollTop: pos}, 1000);
@@ -37,9 +37,16 @@ $(document).ready(function() {
         $('body').css({'overflow-y': 'auto'});
     });
 
-    $('.header_footer .modal-popup .modal-popup-close').click(function(e) {
-        $('.header_footer .modal-popup').animate({'right':'-350px'}, 200);
-    });
+
+    function autoScrole(_with, to, time) {
+        jQuery(_with).click(function() {
+            jQuery('html, body').animate({
+                scrollTop: jQuery(to).offset().top
+            }, time);
+        });
+    }
+    autoScrole(".jump", "#phone-form-wrap", 600);
+
 
     // ГАМБУРГЕР В ШАПКЕ
 
