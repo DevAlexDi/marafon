@@ -90,6 +90,7 @@ $(document).ready(function() {
       centerMode: true,
       centerPadding: '30%',
       slidesToShow: 1,
+      asNavFor: '.new-slider-init-text',
       responsive: [
         {
           breakpoint: 1701,
@@ -137,6 +138,13 @@ $(document).ready(function() {
           }
         }
       ]
+    });
+
+    $('.new-slider-init-text').slick({
+      slidesToShow: 1,
+      arrows: false,
+      dots: false,
+      asNavFor: '.new-slider-init'
     });
     
     
