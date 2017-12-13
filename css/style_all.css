@@ -2215,7 +2215,8 @@ form {
     .book img {
       right: auto;
       position: relative;
-      top: 0; } }
+      top: 0;
+      max-width: 100%; } }
 
 .book_text {
   margin-top: -15px; }
@@ -3763,9 +3764,11 @@ footer {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
   #exit_modal .header_footer .hf-title-regular {
-    line-height: 30px; }
+    line-height: 40px;
+    font-size: 35px; }
   #exit_modal .header_footer h2 {
-    font-size: 30px;
-    margin: 30px 0 60px; }
+    font-size: 25px;
+    margin: 30px 0 60px;
+    font-family: "Roboto", sans-serif; }
 
 /*# sourceMappingURL=style_all.css.map */
